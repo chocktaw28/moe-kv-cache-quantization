@@ -3,3 +3,5 @@ research-plan.md
 *.private.md
 *.pt
 recovery/
+__pycache__/
+*.pyc

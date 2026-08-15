@@ -1,0 +1,709 @@
+
+==============================================================================
+LABEL: scrambled   ROOT: /Users/jayinpanesar/recovery/rotations_scrambled   FILES: 2
+==============================================================================
+
+-- k_rotation_qqt_r_h_pbr.pt  (2,399,261 B)  sha256:cc5313264cc7edc5
+   container: dict
+   format_version                               shape=(1,)                   dtype=int
+       stats: min=1 max=1 mean=1 absmean=1 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 1
+   objective                                    shape=()                     dtype=str
+   source_grouping                              shape=()                     dtype=str
+   layers.0.layer_id                            shape=(1,)                   dtype=int
+       stats: min=0 max=0 mean=0 absmean=0 nan=0 inf=0 zero=1
+       ** CONSTANT TENSOR ** every element == 0
+   layers.0.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.35091 max=0.328982 mean=0.000152076 absmean=0.0705005 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.585e-08 OK  sign=-1 log|det|=-3.155e-08
+       svd:  min=1 max=1 cond=1
+   layers.0.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=5.59371e-05 max=23.061 mean=2.25777 absmean=2.25777 nan=0 inf=0 zero=0
+   layers.1.layer_id                            shape=(1,)                   dtype=int
+       stats: min=1 max=1 mean=1 absmean=1 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 1
+   layers.1.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.347443 max=0.335314 mean=-0.000291552 absmean=0.0703725 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.607e-08 OK  sign=1 log|det|=-5.775e-09
+       svd:  min=1 max=1 cond=1
+   layers.1.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0375353 max=45.6185 mean=2.10133 absmean=2.10133 nan=0 inf=0 zero=0
+   layers.2.layer_id                            shape=(1,)                   dtype=int
+       stats: min=2 max=2 mean=2 absmean=2 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 2
+   layers.2.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.415397 max=0.36633 mean=-0.00060285 absmean=0.0704667 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.536e-08 OK  sign=-1 log|det|=-3.390e-09
+       svd:  min=1 max=1 cond=1
+   layers.2.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0765881 max=33.1637 mean=1.93169 absmean=1.93169 nan=0 inf=0 zero=0
+   layers.3.layer_id                            shape=(1,)                   dtype=int
+       stats: min=3 max=3 mean=3 absmean=3 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 3
+   layers.3.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.331457 max=0.342463 mean=0.00103396 absmean=0.070898 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.585e-08 OK  sign=-1 log|det|=-1.007e-08
+       svd:  min=1 max=1 cond=1
+   layers.3.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.184589 max=41.2183 mean=1.95774 absmean=1.95774 nan=0 inf=0 zero=0
+   layers.4.layer_id                            shape=(1,)                   dtype=int
+       stats: min=4 max=4 mean=4 absmean=4 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 4
+   layers.4.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.337361 max=0.337286 mean=-0.00104619 absmean=0.0705768 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.665e-08 OK  sign=-1 log|det|=2.413e-08
+       svd:  min=1 max=1 cond=1
+   layers.4.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.00480396 max=88.2642 mean=2.69344 absmean=2.69344 nan=0 inf=0 zero=0
+   layers.5.layer_id                            shape=(1,)                   dtype=int
+       stats: min=5 max=5 mean=5 absmean=5 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 5
+   layers.5.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.341505 max=0.385451 mean=-0.000613144 absmean=0.0707131 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.600e-08 OK  sign=-1 log|det|=-2.447e-08
+       svd:  min=1 max=1 cond=1
+   layers.5.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0130767 max=119.233 mean=2.56917 absmean=2.56917 nan=0 inf=0 zero=0
+   layers.6.layer_id                            shape=(1,)                   dtype=int
+       stats: min=6 max=6 mean=6 absmean=6 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 6
+   layers.6.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.327507 max=0.337242 mean=0.000964239 absmean=0.0704708 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.658e-08 OK  sign=-1 log|det|=-3.671e-08
+       svd:  min=1 max=1 cond=1
+   layers.6.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0483889 max=57.6431 mean=2.01318 absmean=2.01318 nan=0 inf=0 zero=0
+   layers.7.layer_id                            shape=(1,)                   dtype=int
+       stats: min=7 max=7 mean=7 absmean=7 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 7
+   layers.7.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.348802 max=0.34812 mean=-0.000295099 absmean=0.0708626 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.624e-08 OK  sign=-1 log|det|=5.702e-08
+       svd:  min=1 max=1 cond=1
+   layers.7.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.080986 max=24.89 mean=1.82623 absmean=1.82623 nan=0 inf=0 zero=0
+   layers.8.layer_id                            shape=(1,)                   dtype=int
+       stats: min=8 max=8 mean=8 absmean=8 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 8
+   layers.8.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.333563 max=0.351767 mean=0.000390738 absmean=0.0704808 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.592e-08 OK  sign=1 log|det|=-3.925e-08
+       svd:  min=1 max=1 cond=1
+   layers.8.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0235077 max=187.701 mean=2.86287 absmean=2.86287 nan=0 inf=0 zero=0
+   layers.9.layer_id                            shape=(1,)                   dtype=int
+       stats: min=9 max=9 mean=9 absmean=9 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 9
+   layers.9.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.39497 max=0.352461 mean=0.000451733 absmean=0.0708466 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.682e-08 OK  sign=1 log|det|=1.165e-08
+       svd:  min=1 max=1 cond=1
+   layers.9.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.309039 max=49.8907 mean=1.99891 absmean=1.99891 nan=0 inf=0 zero=0
+   layers.10.layer_id                           shape=(1,)                   dtype=int
+       stats: min=10 max=10 mean=10 absmean=10 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 10
+   layers.10.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.345496 max=0.355849 mean=-2.22884e-05 absmean=0.0706112 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.609e-08 OK  sign=-1 log|det|=2.118e-08
+       svd:  min=1 max=1 cond=1
+   layers.10.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.00847197 max=123.537 mean=2.82589 absmean=2.82589 nan=0 inf=0 zero=0
+   layers.11.layer_id                           shape=(1,)                   dtype=int
+       stats: min=11 max=11 mean=11 absmean=11 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 11
+   layers.11.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.381013 max=0.305548 mean=-0.000346339 absmean=0.0706252 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.657e-08 OK  sign=-1 log|det|=1.548e-08
+       svd:  min=1 max=1 cond=1
+   layers.11.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.032418 max=123.095 mean=3.05883 absmean=3.05883 nan=0 inf=0 zero=0
+   layers.12.layer_id                           shape=(1,)                   dtype=int
+       stats: min=12 max=12 mean=12 absmean=12 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 12
+   layers.12.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.333238 max=0.31542 mean=-0.001388 absmean=0.0704606 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.628e-08 OK  sign=-1 log|det|=-1.764e-08
+       svd:  min=1 max=1 cond=1
+   layers.12.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.068216 max=138.989 mean=2.72014 absmean=2.72014 nan=0 inf=0 zero=0
+   layers.13.layer_id                           shape=(1,)                   dtype=int
+       stats: min=13 max=13 mean=13 absmean=13 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 13
+   layers.13.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.36062 max=0.358905 mean=-0.000244834 absmean=0.0706162 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.631e-08 OK  sign=1 log|det|=-4.796e-08
+       svd:  min=1 max=1 cond=1
+   layers.13.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0110455 max=24.6191 mean=1.68754 absmean=1.68754 nan=0 inf=0 zero=0
+   layers.14.layer_id                           shape=(1,)                   dtype=int
+       stats: min=14 max=14 mean=14 absmean=14 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 14
+   layers.14.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.321391 max=0.334422 mean=-0.000541556 absmean=0.0707411 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.603e-08 OK  sign=-1 log|det|=-6.964e-08
+       svd:  min=1 max=1 cond=1
+   layers.14.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.000881253 max=44.9417 mean=2.02046 absmean=2.02046 nan=0 inf=0 zero=0
+   layers.15.layer_id                           shape=(1,)                   dtype=int
+       stats: min=15 max=15 mean=15 absmean=15 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 15
+   layers.15.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.339352 max=0.326778 mean=-0.000806435 absmean=0.0705857 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.642e-08 OK  sign=1 log|det|=3.020e-08
+       svd:  min=1 max=1 cond=1
+   layers.15.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0860397 max=17.8871 mean=1.53913 absmean=1.53913 nan=0 inf=0 zero=0
+   layers.16.layer_id                           shape=(1,)                   dtype=int
+       stats: min=16 max=16 mean=16 absmean=16 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 16
+   layers.16.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.331849 max=0.347843 mean=0.000715586 absmean=0.0704885 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.621e-08 OK  sign=1 log|det|=4.346e-08
+       svd:  min=1 max=1 cond=1
+   layers.16.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0247466 max=37.5868 mean=1.60324 absmean=1.60324 nan=0 inf=0 zero=0
+   layers.17.layer_id                           shape=(1,)                   dtype=int
+       stats: min=17 max=17 mean=17 absmean=17 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 17
+   layers.17.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.409217 max=0.299118 mean=-0.00159244 absmean=0.0705433 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.641e-08 OK  sign=1 log|det|=-2.062e-08
+       svd:  min=1 max=1 cond=1
+   layers.17.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.014333 max=17.548 mean=1.45142 absmean=1.45142 nan=0 inf=0 zero=0
+   layers.18.layer_id                           shape=(1,)                   dtype=int
+       stats: min=18 max=18 mean=18 absmean=18 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 18
+   layers.18.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.336196 max=0.352308 mean=0.000240168 absmean=0.0704973 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.643e-08 OK  sign=1 log|det|=-2.134e-08
+       svd:  min=1 max=1 cond=1
+   layers.18.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.166159 max=44.5141 mean=1.68618 absmean=1.68618 nan=0 inf=0 zero=0
+   layers.19.layer_id                           shape=(1,)                   dtype=int
+       stats: min=19 max=19 mean=19 absmean=19 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 19
+   layers.19.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.326005 max=0.350426 mean=0.000417522 absmean=0.0705986 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.607e-08 OK  sign=-1 log|det|=4.806e-08
+       svd:  min=1 max=1 cond=1
+   layers.19.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.184918 max=27.5723 mean=1.76142 absmean=1.76142 nan=0 inf=0 zero=0
+   layers.20.layer_id                           shape=(1,)                   dtype=int
+       stats: min=20 max=20 mean=20 absmean=20 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 20
+   layers.20.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.346711 max=0.318473 mean=-0.000304972 absmean=0.0708667 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.648e-08 OK  sign=-1 log|det|=-4.936e-08
+       svd:  min=1 max=1 cond=1
+   layers.20.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0153627 max=16.9064 mean=1.4665 absmean=1.4665 nan=0 inf=0 zero=0
+   layers.21.layer_id                           shape=(1,)                   dtype=int
+       stats: min=21 max=21 mean=21 absmean=21 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 21
+   layers.21.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.323497 max=0.347007 mean=6.62057e-05 absmean=0.0709351 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.639e-08 OK  sign=1 log|det|=2.161e-08
+       svd:  min=1 max=1 cond=1
+   layers.21.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0167542 max=65.4012 mean=2.01543 absmean=2.01543 nan=0 inf=0 zero=0
+   layers.22.layer_id                           shape=(1,)                   dtype=int
+       stats: min=22 max=22 mean=22 absmean=22 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 22
+   layers.22.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.332336 max=0.322248 mean=-0.000796618 absmean=0.0706116 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.597e-08 OK  sign=1 log|det|=3.924e-08
+       svd:  min=1 max=1 cond=1
+   layers.22.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0150328 max=36.7658 mean=1.65699 absmean=1.65699 nan=0 inf=0 zero=0
+   layers.23.layer_id                           shape=(1,)                   dtype=int
+       stats: min=23 max=23 mean=23 absmean=23 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 23
+   layers.23.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.320172 max=0.334913 mean=-0.000292121 absmean=0.0707959 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.602e-08 OK  sign=-1 log|det|=3.085e-08
+       svd:  min=1 max=1 cond=1
+   layers.23.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0159871 max=32.0828 mean=1.62939 absmean=1.62939 nan=0 inf=0 zero=0
+   layers.24.layer_id                           shape=(1,)                   dtype=int
+       stats: min=24 max=24 mean=24 absmean=24 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 24
+   layers.24.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.327792 max=0.325245 mean=0.000207692 absmean=0.0705561 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.670e-08 OK  sign=1 log|det|=-3.955e-08
+       svd:  min=1 max=1 cond=1
+   layers.24.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.00487043 max=22.5888 mean=1.31766 absmean=1.31766 nan=0 inf=0 zero=0
+   layers.25.layer_id                           shape=(1,)                   dtype=int
+       stats: min=25 max=25 mean=25 absmean=25 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 25
+   layers.25.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.327561 max=0.3747 mean=0.000771032 absmean=0.0706523 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.629e-08 OK  sign=-1 log|det|=8.701e-08
+       svd:  min=1 max=1 cond=1
+   layers.25.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0169531 max=73.0933 mean=2.27158 absmean=2.27158 nan=0 inf=0 zero=0
+   layers.26.layer_id                           shape=(1,)                   dtype=int
+       stats: min=26 max=26 mean=26 absmean=26 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 26
+   layers.26.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.324848 max=0.383523 mean=0.00112346 absmean=0.0707042 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.604e-08 OK  sign=1 log|det|=-1.868e-08
+       svd:  min=1 max=1 cond=1
+   layers.26.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.00824764 max=63.3084 mean=1.81983 absmean=1.81983 nan=0 inf=0 zero=0
+   layers.27.layer_id                           shape=(1,)                   dtype=int
+       stats: min=27 max=27 mean=27 absmean=27 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 27
+   layers.27.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.34031 max=0.338228 mean=-0.000608526 absmean=0.070597 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.581e-08 OK  sign=-1 log|det|=6.343e-08
+       svd:  min=1 max=1 cond=1
+   layers.27.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.00813412 max=111.528 mean=2.22865 absmean=2.22865 nan=0 inf=0 zero=0
+   layers.28.layer_id                           shape=(1,)                   dtype=int
+       stats: min=28 max=28 mean=28 absmean=28 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 28
+   layers.28.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.366146 max=0.372831 mean=0.000247333 absmean=0.0706481 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.636e-08 OK  sign=1 log|det|=6.563e-09
+       svd:  min=1 max=1 cond=1
+   layers.28.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0351383 max=160.951 mean=3.14714 absmean=3.14714 nan=0 inf=0 zero=0
+   layers.29.layer_id                           shape=(1,)                   dtype=int
+       stats: min=29 max=29 mean=29 absmean=29 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 29
+   layers.29.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.333731 max=0.338036 mean=0.000101933 absmean=0.0708057 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.641e-08 OK  sign=1 log|det|=3.322e-08
+       svd:  min=1 max=1 cond=1
+   layers.29.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.00481313 max=29.3175 mean=1.55819 absmean=1.55819 nan=0 inf=0 zero=0
+   layers.30.layer_id                           shape=(1,)                   dtype=int
+       stats: min=30 max=30 mean=30 absmean=30 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 30
+   layers.30.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.319867 max=0.342208 mean=-5.33729e-05 absmean=0.0705347 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.609e-08 OK  sign=-1 log|det|=-5.740e-10
+       svd:  min=1 max=1 cond=1
+   layers.30.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0391402 max=116.668 mean=3.28379 absmean=3.28379 nan=0 inf=0 zero=0
+   layers.31.layer_id                           shape=(1,)                   dtype=int
+       stats: min=31 max=31 mean=31 absmean=31 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 31
+   layers.31.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.355157 max=0.336025 mean=-0.000129818 absmean=0.0707334 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.626e-08 OK  sign=1 log|det|=5.013e-09
+       svd:  min=1 max=1 cond=1
+   layers.31.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.00870717 max=28.6776 mean=1.7278 absmean=1.7278 nan=0 inf=0 zero=0
+   layers.32.layer_id                           shape=(1,)                   dtype=int
+       stats: min=32 max=32 mean=32 absmean=32 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 32
+   layers.32.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.350943 max=0.343633 mean=-0.000640081 absmean=0.0706962 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.623e-08 OK  sign=1 log|det|=-5.304e-09
+       svd:  min=1 max=1 cond=1
+   layers.32.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.132867 max=83.9054 mean=2.24647 absmean=2.24647 nan=0 inf=0 zero=0
+   layers.33.layer_id                           shape=(1,)                   dtype=int
+       stats: min=33 max=33 mean=33 absmean=33 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 33
+   layers.33.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.355624 max=0.331427 mean=0.000622068 absmean=0.0707163 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.646e-08 OK  sign=1 log|det|=8.476e-09
+       svd:  min=1 max=1 cond=1
+   layers.33.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.254641 max=19.0149 mean=1.33561 absmean=1.33561 nan=0 inf=0 zero=0
+   layers.34.layer_id                           shape=(1,)                   dtype=int
+       stats: min=34 max=34 mean=34 absmean=34 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 34
+   layers.34.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.336517 max=0.322953 mean=6.7804e-05 absmean=0.0706222 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.525e-08 OK  sign=-1 log|det|=-1.614e-08
+       svd:  min=1 max=1 cond=1
+   layers.34.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0126422 max=110.348 mean=2.55528 absmean=2.55528 nan=0 inf=0 zero=0
+   layers.35.layer_id                           shape=(1,)                   dtype=int
+       stats: min=35 max=35 mean=35 absmean=35 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 35
+   layers.35.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.306091 max=0.34866 mean=0.000645507 absmean=0.0706558 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.624e-08 OK  sign=1 log|det|=-3.864e-08
+       svd:  min=1 max=1 cond=1
+   layers.35.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0368389 max=66.2625 mean=2.25286 absmean=2.25286 nan=0 inf=0 zero=0
+
+-- v_rotation_sst_r_h_pbr.pt  (2,399,261 B)  sha256:18815a709923f79a
+   container: dict
+   format_version                               shape=(1,)                   dtype=int
+       stats: min=1 max=1 mean=1 absmean=1 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 1
+   objective                                    shape=()                     dtype=str
+   source_grouping                              shape=()                     dtype=str
+   layers.0.layer_id                            shape=(1,)                   dtype=int
+       stats: min=0 max=0 mean=0 absmean=0 nan=0 inf=0 zero=1
+       ** CONSTANT TENSOR ** every element == 0
+   layers.0.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.381127 max=0.344025 mean=0.000774098 absmean=0.0708659 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.574e-08 OK  sign=-1 log|det|=6.991e-09
+       svd:  min=1 max=1 cond=1
+   layers.0.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.000234664 max=0.00511224 mean=0.000737287 absmean=0.000737287 nan=0 inf=0 zero=0
+   layers.1.layer_id                            shape=(1,)                   dtype=int
+       stats: min=1 max=1 mean=1 absmean=1 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 1
+   layers.1.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.314379 max=0.362705 mean=-0.000984229 absmean=0.0709264 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.535e-08 OK  sign=1 log|det|=3.286e-08
+       svd:  min=1 max=1 cond=1
+   layers.1.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.000911 max=0.0116324 mean=0.00217652 absmean=0.00217652 nan=0 inf=0 zero=0
+   layers.2.layer_id                            shape=(1,)                   dtype=int
+       stats: min=2 max=2 mean=2 absmean=2 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 2
+   layers.2.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.316452 max=0.334686 mean=0.000458561 absmean=0.0704773 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.619e-08 OK  sign=1 log|det|=3.247e-08
+       svd:  min=1 max=1 cond=1
+   layers.2.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.00152079 max=0.0147098 mean=0.00348154 absmean=0.00348154 nan=0 inf=0 zero=0
+   layers.3.layer_id                            shape=(1,)                   dtype=int
+       stats: min=3 max=3 mean=3 absmean=3 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 3
+   layers.3.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.372373 max=0.316274 mean=7.46893e-06 absmean=0.0705177 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.648e-08 OK  sign=-1 log|det|=-1.347e-08
+       svd:  min=1 max=1 cond=1
+   layers.3.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0028432 max=0.0329518 mean=0.00644142 absmean=0.00644142 nan=0 inf=0 zero=0
+   layers.4.layer_id                            shape=(1,)                   dtype=int
+       stats: min=4 max=4 mean=4 absmean=4 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 4
+   layers.4.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.337218 max=0.365165 mean=2.00298e-05 absmean=0.070719 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.630e-08 OK  sign=-1 log|det|=-1.058e-07
+       svd:  min=1 max=1 cond=1
+   layers.4.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.00550475 max=0.0403269 mean=0.0111889 absmean=0.0111889 nan=0 inf=0 zero=0
+   layers.5.layer_id                            shape=(1,)                   dtype=int
+       stats: min=5 max=5 mean=5 absmean=5 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 5
+   layers.5.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.337918 max=0.372925 mean=-0.000573646 absmean=0.0706702 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.626e-08 OK  sign=1 log|det|=5.726e-08
+       svd:  min=1 max=1 cond=1
+   layers.5.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.00545264 max=0.0793181 mean=0.0136735 absmean=0.0136735 nan=0 inf=0 zero=0
+   layers.6.layer_id                            shape=(1,)                   dtype=int
+       stats: min=6 max=6 mean=6 absmean=6 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 6
+   layers.6.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.344514 max=0.368089 mean=-0.000800882 absmean=0.0708042 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.633e-08 OK  sign=1 log|det|=1.770e-08
+       svd:  min=1 max=1 cond=1
+   layers.6.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0097616 max=0.0620368 mean=0.0188691 absmean=0.0188691 nan=0 inf=0 zero=0
+   layers.7.layer_id                            shape=(1,)                   dtype=int
+       stats: min=7 max=7 mean=7 absmean=7 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 7
+   layers.7.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.287329 max=0.320431 mean=0.000665112 absmean=0.0709132 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.633e-08 OK  sign=1 log|det|=1.383e-08
+       svd:  min=1 max=1 cond=1
+   layers.7.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0214311 max=0.360629 mean=0.0445896 absmean=0.0445896 nan=0 inf=0 zero=0
+   layers.8.layer_id                            shape=(1,)                   dtype=int
+       stats: min=8 max=8 mean=8 absmean=8 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 8
+   layers.8.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.378889 max=0.348334 mean=-0.00062278 absmean=0.0706374 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.660e-08 OK  sign=-1 log|det|=7.752e-08
+       svd:  min=1 max=1 cond=1
+   layers.8.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0397744 max=0.21626 mean=0.0758579 absmean=0.0758579 nan=0 inf=0 zero=0
+   layers.9.layer_id                            shape=(1,)                   dtype=int
+       stats: min=9 max=9 mean=9 absmean=9 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 9
+   layers.9.rotation                            shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.358912 max=0.376655 mean=0.00117214 absmean=0.0705084 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.639e-08 OK  sign=1 log|det|=-3.708e-08
+       svd:  min=1 max=1 cond=1
+   layers.9.eigenvalues                         shape=(128,)                 dtype=torch.float32
+       stats: min=0.0421489 max=0.321415 mean=0.0817236 absmean=0.0817236 nan=0 inf=0 zero=0
+   layers.10.layer_id                           shape=(1,)                   dtype=int
+       stats: min=10 max=10 mean=10 absmean=10 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 10
+   layers.10.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.328899 max=0.341343 mean=-0.000645396 absmean=0.070596 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.619e-08 OK  sign=-1 log|det|=4.820e-08
+       svd:  min=1 max=1 cond=1
+   layers.10.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0784437 max=0.672711 mean=0.160211 absmean=0.160211 nan=0 inf=0 zero=0
+   layers.11.layer_id                           shape=(1,)                   dtype=int
+       stats: min=11 max=11 mean=11 absmean=11 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 11
+   layers.11.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.341712 max=0.34083 mean=0.000220567 absmean=0.0706247 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.605e-08 OK  sign=-1 log|det|=2.348e-08
+       svd:  min=1 max=1 cond=1
+   layers.11.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0393483 max=0.277322 mean=0.0821762 absmean=0.0821762 nan=0 inf=0 zero=0
+   layers.12.layer_id                           shape=(1,)                   dtype=int
+       stats: min=12 max=12 mean=12 absmean=12 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 12
+   layers.12.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.327287 max=0.337193 mean=-0.000452245 absmean=0.070723 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.626e-08 OK  sign=1 log|det|=7.028e-08
+       svd:  min=1 max=1 cond=1
+   layers.12.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0482338 max=0.401864 mean=0.106973 absmean=0.106973 nan=0 inf=0 zero=0
+   layers.13.layer_id                           shape=(1,)                   dtype=int
+       stats: min=13 max=13 mean=13 absmean=13 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 13
+   layers.13.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.358178 max=0.332813 mean=0.000326934 absmean=0.0709644 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.611e-08 OK  sign=1 log|det|=-2.754e-08
+       svd:  min=1 max=1 cond=1
+   layers.13.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0406407 max=1.80062 mean=0.13201 absmean=0.13201 nan=0 inf=0 zero=0
+   layers.14.layer_id                           shape=(1,)                   dtype=int
+       stats: min=14 max=14 mean=14 absmean=14 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 14
+   layers.14.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.337613 max=0.339116 mean=-6.30126e-06 absmean=0.0705355 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.636e-08 OK  sign=1 log|det|=2.526e-08
+       svd:  min=1 max=1 cond=1
+   layers.14.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0771845 max=1.53549 mean=0.181866 absmean=0.181866 nan=0 inf=0 zero=0
+   layers.15.layer_id                           shape=(1,)                   dtype=int
+       stats: min=15 max=15 mean=15 absmean=15 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 15
+   layers.15.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.328833 max=0.323033 mean=-0.000802498 absmean=0.0705574 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.649e-08 OK  sign=-1 log|det|=4.347e-08
+       svd:  min=1 max=1 cond=1
+   layers.15.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.0695979 max=5.48539 mean=0.262342 absmean=0.262342 nan=0 inf=0 zero=0
+   layers.16.layer_id                           shape=(1,)                   dtype=int
+       stats: min=16 max=16 mean=16 absmean=16 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 16
+   layers.16.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.396639 max=0.332937 mean=-0.000322117 absmean=0.0706061 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.606e-08 OK  sign=1 log|det|=1.449e-08
+       svd:  min=1 max=1 cond=1
+   layers.16.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.13392 max=6.46874 mean=0.378009 absmean=0.378009 nan=0 inf=0 zero=0
+   layers.17.layer_id                           shape=(1,)                   dtype=int
+       stats: min=17 max=17 mean=17 absmean=17 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 17
+   layers.17.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.330671 max=0.327008 mean=0.000916045 absmean=0.0706054 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.638e-08 OK  sign=1 log|det|=-3.316e-08
+       svd:  min=1 max=1 cond=1
+   layers.17.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.103748 max=11.4968 mean=0.341881 absmean=0.341881 nan=0 inf=0 zero=0
+   layers.18.layer_id                           shape=(1,)                   dtype=int
+       stats: min=18 max=18 mean=18 absmean=18 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 18
+   layers.18.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.355242 max=0.3445 mean=-0.000135572 absmean=0.0707157 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.614e-08 OK  sign=1 log|det|=-2.977e-08
+       svd:  min=1 max=1 cond=1
+   layers.18.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.135822 max=11.0334 mean=0.507989 absmean=0.507989 nan=0 inf=0 zero=0
+   layers.19.layer_id                           shape=(1,)                   dtype=int
+       stats: min=19 max=19 mean=19 absmean=19 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 19
+   layers.19.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.376837 max=0.338282 mean=-0.000861935 absmean=0.0709366 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.616e-08 OK  sign=1 log|det|=1.468e-08
+       svd:  min=1 max=1 cond=1
+   layers.19.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.21539 max=2.20213 mean=0.458725 absmean=0.458725 nan=0 inf=0 zero=0
+   layers.20.layer_id                           shape=(1,)                   dtype=int
+       stats: min=20 max=20 mean=20 absmean=20 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 20
+   layers.20.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.316792 max=0.32999 mean=0.000455922 absmean=0.0706845 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.612e-08 OK  sign=1 log|det|=9.470e-08
+       svd:  min=1 max=1 cond=1
+   layers.20.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.217294 max=1.57747 mean=0.447694 absmean=0.447694 nan=0 inf=0 zero=0
+   layers.21.layer_id                           shape=(1,)                   dtype=int
+       stats: min=21 max=21 mean=21 absmean=21 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 21
+   layers.21.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.338124 max=0.394874 mean=-0.000749145 absmean=0.0704998 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.610e-08 OK  sign=1 log|det|=-4.722e-08
+       svd:  min=1 max=1 cond=1
+   layers.21.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.281655 max=1.81223 mean=0.58451 absmean=0.58451 nan=0 inf=0 zero=0
+   layers.22.layer_id                           shape=(1,)                   dtype=int
+       stats: min=22 max=22 mean=22 absmean=22 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 22
+   layers.22.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.324066 max=0.304743 mean=0.000565796 absmean=0.0707956 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.564e-08 OK  sign=1 log|det|=4.077e-08
+       svd:  min=1 max=1 cond=1
+   layers.22.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.438282 max=2.58431 mean=0.845427 absmean=0.845427 nan=0 inf=0 zero=0
+   layers.23.layer_id                           shape=(1,)                   dtype=int
+       stats: min=23 max=23 mean=23 absmean=23 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 23
+   layers.23.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.334763 max=0.295801 mean=0.000241757 absmean=0.0705444 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.563e-08 OK  sign=-1 log|det|=9.827e-08
+       svd:  min=1 max=1 cond=1
+   layers.23.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.489134 max=2.61351 mean=0.936596 absmean=0.936596 nan=0 inf=0 zero=0
+   layers.24.layer_id                           shape=(1,)                   dtype=int
+       stats: min=24 max=24 mean=24 absmean=24 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 24
+   layers.24.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.364597 max=0.33815 mean=-0.000664079 absmean=0.0707445 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.620e-08 OK  sign=-1 log|det|=-5.313e-09
+       svd:  min=1 max=1 cond=1
+   layers.24.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.853491 max=5.14458 mean=1.69312 absmean=1.69312 nan=0 inf=0 zero=0
+   layers.25.layer_id                           shape=(1,)                   dtype=int
+       stats: min=25 max=25 mean=25 absmean=25 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 25
+   layers.25.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.332049 max=0.345588 mean=0.000323914 absmean=0.0708474 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.588e-08 OK  sign=1 log|det|=1.968e-08
+       svd:  min=1 max=1 cond=1
+   layers.25.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=0.717471 max=5.03664 mean=1.4113 absmean=1.4113 nan=0 inf=0 zero=0
+   layers.26.layer_id                           shape=(1,)                   dtype=int
+       stats: min=26 max=26 mean=26 absmean=26 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 26
+   layers.26.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.330274 max=0.345406 mean=0.000598578 absmean=0.0708345 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.592e-08 OK  sign=1 log|det|=-5.962e-08
+       svd:  min=1 max=1 cond=1
+   layers.26.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=1.25922 max=6.4656 mean=2.22138 absmean=2.22138 nan=0 inf=0 zero=0
+   layers.27.layer_id                           shape=(1,)                   dtype=int
+       stats: min=27 max=27 mean=27 absmean=27 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 27
+   layers.27.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.344528 max=0.379938 mean=0.000664762 absmean=0.0707948 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.665e-08 OK  sign=1 log|det|=-2.626e-08
+       svd:  min=1 max=1 cond=1
+   layers.27.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=1.37969 max=10.7525 mean=2.67604 absmean=2.67604 nan=0 inf=0 zero=0
+   layers.28.layer_id                           shape=(1,)                   dtype=int
+       stats: min=28 max=28 mean=28 absmean=28 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 28
+   layers.28.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.317693 max=0.358048 mean=-0.00127638 absmean=0.0707549 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.628e-08 OK  sign=1 log|det|=3.354e-09
+       svd:  min=1 max=1 cond=1
+   layers.28.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=1.52408 max=14.8362 mean=3.11686 absmean=3.11686 nan=0 inf=0 zero=0
+   layers.29.layer_id                           shape=(1,)                   dtype=int
+       stats: min=29 max=29 mean=29 absmean=29 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 29
+   layers.29.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.360277 max=0.379781 mean=0.000971813 absmean=0.0704727 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.614e-08 OK  sign=-1 log|det|=-1.940e-08
+       svd:  min=1 max=1 cond=1
+   layers.29.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=4.15745 max=15.6102 mean=7.32072 absmean=7.32072 nan=0 inf=0 zero=0
+   layers.30.layer_id                           shape=(1,)                   dtype=int
+       stats: min=30 max=30 mean=30 absmean=30 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 30
+   layers.30.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.328034 max=0.35305 mean=-0.000335583 absmean=0.0705955 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.596e-08 OK  sign=-1 log|det|=-2.858e-08
+       svd:  min=1 max=1 cond=1
+   layers.30.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=4.26298 max=37.1703 mean=7.71973 absmean=7.71973 nan=0 inf=0 zero=0
+   layers.31.layer_id                           shape=(1,)                   dtype=int
+       stats: min=31 max=31 mean=31 absmean=31 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 31
+   layers.31.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.347539 max=0.323391 mean=-0.000816941 absmean=0.0708884 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.584e-08 OK  sign=-1 log|det|=4.307e-08
+       svd:  min=1 max=1 cond=1
+   layers.31.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=6.53871 max=27.1286 mean=10.9666 absmean=10.9666 nan=0 inf=0 zero=0
+   layers.32.layer_id                           shape=(1,)                   dtype=int
+       stats: min=32 max=32 mean=32 absmean=32 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 32
+   layers.32.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.348656 max=0.350603 mean=9.85228e-05 absmean=0.07055 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.616e-08 OK  sign=1 log|det|=7.949e-08
+       svd:  min=1 max=1 cond=1
+   layers.32.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=9.12919 max=60.2709 mean=16.4335 absmean=16.4335 nan=0 inf=0 zero=0
+   layers.33.layer_id                           shape=(1,)                   dtype=int
+       stats: min=33 max=33 mean=33 absmean=33 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 33
+   layers.33.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.354349 max=0.350575 mean=-0.000416453 absmean=0.0707658 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.590e-08 OK  sign=-1 log|det|=-3.343e-08
+       svd:  min=1 max=1 cond=1
+   layers.33.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=21.2709 max=87.7835 mean=35.5746 absmean=35.5746 nan=0 inf=0 zero=0
+   layers.34.layer_id                           shape=(1,)                   dtype=int
+       stats: min=34 max=34 mean=34 absmean=34 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 34
+   layers.34.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.321001 max=0.325997 mean=0.000184899 absmean=0.0707463 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.614e-08 OK  sign=-1 log|det|=3.151e-08
+       svd:  min=1 max=1 cond=1
+   layers.34.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=15.5752 max=270.472 mean=30.6426 absmean=30.6426 nan=0 inf=0 zero=0
+   layers.35.layer_id                           shape=(1,)                   dtype=int
+       stats: min=35 max=35 mean=35 absmean=35 nan=0 inf=0 zero=0
+       ** CONSTANT TENSOR ** every element == 35
+   layers.35.rotation                           shape=(128, 128)             dtype=torch.float32
+       stats: min=-0.344909 max=0.377606 mean=-0.000458884 absmean=0.0705928 nan=0 inf=0 zero=0
+       orth: ||RR^T-I||_F/sqrt(n)=3.593e-08 OK  sign=-1 log|det|=1.651e-08
+       svd:  min=1 max=1 cond=1
+   layers.35.eigenvalues                        shape=(128,)                 dtype=torch.float32
+       stats: min=6.88047 max=66.7587 mean=13.8787 absmean=13.8787 nan=0 inf=0 zero=0
+
+------------------------------------------------------------------------------
+SCHEMA SUMMARY for scrambled
+------------------------------------------------------------------------------
+     2 file(s) with 111 leaf key(s):
+        format_version                               shapes: (1,)
+        layers.0.eigenvalues                         shapes: (128,)
+        layers.0.layer_id                            shapes: (1,)
+        layers.0.rotation                            shapes: (128, 128)
+        layers.1.eigenvalues                         shapes: (128,)
+        layers.1.layer_id                            shapes: (1,)
+        layers.1.rotation                            shapes: (128, 128)
+        layers.10.eigenvalues                        shapes: (128,)
+        layers.10.layer_id                           shapes: (1,)
+        layers.10.rotation                           shapes: (128, 128)
+        layers.11.eigenvalues                        shapes: (128,)
+        layers.11.layer_id                           shapes: (1,)
+        layers.11.rotation                           shapes: (128, 128)
+        layers.12.eigenvalues                        shapes: (128,)
+        layers.12.layer_id                           shapes: (1,)
+        layers.12.rotation                           shapes: (128, 128)
+        layers.13.eigenvalues                        shapes: (128,)
+        layers.13.layer_id                           shapes: (1,)
+        layers.13.rotation                           shapes: (128, 128)
+        layers.14.eigenvalues                        shapes: (128,)
+        layers.14.layer_id                           shapes: (1,)
+        layers.14.rotation                           shapes: (128, 128)
+        layers.15.eigenvalues                        shapes: (128,)
+        layers.15.layer_id                           shapes: (1,)
+        ... and 87 more keys
+
+  Square matrices checked: 72   Non-orthogonal: 0
+  Worst orthogonality residuals:
+    3.682e-08  OK   k_rotation_qqt_r_h_pbr.pt::layers.9.rotation
+    3.670e-08  OK   k_rotation_qqt_r_h_pbr.pt::layers.24.rotation
+    3.665e-08  OK   v_rotation_sst_r_h_pbr.pt::layers.27.rotation
+    3.665e-08  OK   k_rotation_qqt_r_h_pbr.pt::layers.4.rotation
+    3.660e-08  OK   v_rotation_sst_r_h_pbr.pt::layers.8.rotation
+
+wrote /Users/jayinpanesar/moe-kv-cache-quantization/reproduction/stage_a_scrambled.json
+

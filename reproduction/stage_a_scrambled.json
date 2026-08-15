@@ -1,0 +1,4836 @@
+{
+  "label": "scrambled",
+  "root": "/Users/jayinpanesar/recovery/rotations_scrambled",
+  "files": [
+    {
+      "file": "k_rotation_qqt_r_h_pbr.pt",
+      "bytes": 2399261,
+      "sha256_16": "cc5313264cc7edc5",
+      "container": "dict",
+      "leaves": [
+        {
+          "key": "format_version",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 1.0,
+            "max": 1.0,
+            "mean": 1.0,
+            "absmean": 1.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "objective",
+          "shape": [],
+          "dtype": "str",
+          "stats": null,
+          "orth": []
+        },
+        {
+          "key": "source_grouping",
+          "shape": [],
+          "dtype": "str",
+          "stats": null,
+          "orth": []
+        },
+        {
+          "key": "layers.0.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "absmean": 0.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 1
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.0.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.35091012716293335,
+            "max": 0.3289816975593567,
+            "mean": 0.0001520761550408145,
+            "absmean": 0.07050047478863891,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.585303973289625e-08,
+              "orth_resid_RtR": 3.585303974012203e-08,
+              "det": "sign=-1 log|det|=-3.155e-08",
+              "singular_values": {
+                "min": 0.999999966584097,
+                "max": 1.000000034979664,
+                "cond": 1.0000000683955694
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.0.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 5.593713649432175e-05,
+            "max": 23.061004638671875,
+            "mean": 2.2577678197561397,
+            "absmean": 2.2577678197561397,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.1.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 1.0,
+            "max": 1.0,
+            "mean": 1.0,
+            "absmean": 1.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.1.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.34744319319725037,
+            "max": 0.3353143632411957,
+            "mean": -0.00029155217870166505,
+            "absmean": 0.07037254623348779,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.607486318641781e-08,
+              "orth_resid_RtR": 3.607486319155108e-08,
+              "det": "sign=1 log|det|=-5.775e-09",
+              "singular_values": {
+                "min": 0.9999999645735377,
+                "max": 1.0000000344058921,
+                "cond": 1.000000069832357
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.1.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.03753528743982315,
+            "max": 45.61851501464844,
+            "mean": 2.101326268457342,
+            "absmean": 2.101326268457342,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.2.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "absmean": 2.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.2.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.4153972864151001,
+            "max": 0.3663299083709717,
+            "mean": -0.00060284955829909,
+            "absmean": 0.07046665988902734,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.535857793568944e-08,
+              "orth_resid_RtR": 3.535857793985105e-08,
+              "det": "sign=-1 log|det|=-3.390e-09",
+              "singular_values": {
+                "min": 0.999999965845421,
+                "max": 1.0000000355903036,
+                "cond": 1.000000069744885
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.2.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.07658806443214417,
+            "max": 33.16366958618164,
+            "mean": 1.9316934704547748,
+            "absmean": 1.9316934704547748,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.3.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 3.0,
+            "max": 3.0,
+            "mean": 3.0,
+            "absmean": 3.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.3.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33145710825920105,
+            "max": 0.3424631357192993,
+            "mean": 0.0010339570908019652,
+            "absmean": 0.07089795969344774,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.5845045841016365e-08,
+              "orth_resid_RtR": 3.58450458305541e-08,
+              "det": "sign=-1 log|det|=-1.007e-08",
+              "singular_values": {
+                "min": 0.9999999657527002,
+                "max": 1.000000034334518,
+                "cond": 1.00000006858182
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.3.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.18458928167819977,
+            "max": 41.21834945678711,
+            "mean": 1.9577373842475936,
+            "absmean": 1.9577373842475936,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.4.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 4.0,
+            "max": 4.0,
+            "mean": 4.0,
+            "absmean": 4.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.4.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3373609185218811,
+            "max": 0.3372863233089447,
+            "mean": -0.0010461914832610997,
+            "absmean": 0.07057678049764801,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.664807639803611e-08,
+              "orth_resid_RtR": 3.664807640362328e-08,
+              "det": "sign=-1 log|det|=2.413e-08",
+              "singular_values": {
+                "min": 0.9999999657499331,
+                "max": 1.0000000359168564,
+                "cond": 1.0000000701669256
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.4.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.004803960677236319,
+            "max": 88.26419830322266,
+            "mean": 2.6934408074557723,
+            "absmean": 2.6934408074557723,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.5.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 5.0,
+            "max": 5.0,
+            "mean": 5.0,
+            "absmean": 5.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.5.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3415047526359558,
+            "max": 0.3854513466358185,
+            "mean": -0.0006131439512967463,
+            "absmean": 0.07071310291653965,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.599825801111325e-08,
+              "orth_resid_RtR": 3.599825801969014e-08,
+              "det": "sign=-1 log|det|=-2.447e-08",
+              "singular_values": {
+                "min": 0.9999999639145778,
+                "max": 1.0000000345199125,
+                "cond": 1.0000000706053371
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.5.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.013076743111014366,
+            "max": 119.23316192626953,
+            "mean": 2.5691695988789434,
+            "absmean": 2.5691695988789434,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.6.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 6.0,
+            "max": 6.0,
+            "mean": 6.0,
+            "absmean": 6.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.6.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.32750651240348816,
+            "max": 0.3372417390346527,
+            "mean": 0.0009642389126713613,
+            "absmean": 0.07047083640304733,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.658157617387889e-08,
+              "orth_resid_RtR": 3.658157618252434e-08,
+              "det": "sign=-1 log|det|=-3.671e-08",
+              "singular_values": {
+                "min": 0.9999999628264354,
+                "max": 1.0000000341409812,
+                "cond": 1.0000000713145483
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.6.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.04838891327381134,
+            "max": 57.64311218261719,
+            "mean": 2.0131835751235485,
+            "absmean": 2.0131835751235485,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.7.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 7.0,
+            "max": 7.0,
+            "mean": 7.0,
+            "absmean": 7.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.7.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.34880152344703674,
+            "max": 0.3481196165084839,
+            "mean": -0.00029509856434611903,
+            "absmean": 0.07086259300996028,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.624321528857356e-08,
+              "orth_resid_RtR": 3.624321528067281e-08,
+              "det": "sign=-1 log|det|=5.702e-08",
+              "singular_values": {
+                "min": 0.999999965819913,
+                "max": 1.0000000360075614,
+                "cond": 1.0000000701876508
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.7.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.08098599314689636,
+            "max": 24.890043258666992,
+            "mean": 1.8262335234321654,
+            "absmean": 1.8262335234321654,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.8.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 8.0,
+            "max": 8.0,
+            "mean": 8.0,
+            "absmean": 8.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.8.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33356255292892456,
+            "max": 0.3517674505710602,
+            "mean": 0.00039073808069262084,
+            "absmean": 0.07048078519106754,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.5915270770485065e-08,
+              "orth_resid_RtR": 3.591527078301484e-08,
+              "det": "sign=1 log|det|=-3.925e-08",
+              "singular_values": {
+                "min": 0.9999999650674487,
+                "max": 1.0000000352779064,
+                "cond": 1.0000000702104601
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.8.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.02350766584277153,
+            "max": 187.7013702392578,
+            "mean": 2.8628672429476865,
+            "absmean": 2.8628672429476865,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.9.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 9.0,
+            "max": 9.0,
+            "mean": 9.0,
+            "absmean": 9.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.9.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.39497044682502747,
+            "max": 0.35246115922927856,
+            "mean": 0.00045173313798945597,
+            "absmean": 0.07084660684846028,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.682101227399693e-08,
+              "orth_resid_RtR": 3.682101227097853e-08,
+              "det": "sign=1 log|det|=1.165e-08",
+              "singular_values": {
+                "min": 0.9999999654453815,
+                "max": 1.0000000355648504,
+                "cond": 1.0000000701194713
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.9.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.3090391159057617,
+            "max": 49.89067840576172,
+            "mean": 1.998912898125127,
+            "absmean": 1.998912898125127,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.10.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 10.0,
+            "max": 10.0,
+            "mean": 10.0,
+            "absmean": 10.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.10.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.34549573063850403,
+            "max": 0.35584908723831177,
+            "mean": -2.228841231459444e-05,
+            "absmean": 0.07061117241945629,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6086676096952675e-08,
+              "orth_resid_RtR": 3.6086676090395416e-08,
+              "det": "sign=-1 log|det|=2.118e-08",
+              "singular_values": {
+                "min": 0.9999999652249539,
+                "max": 1.0000000338378028,
+                "cond": 1.0000000686128512
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.10.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.008471974171698093,
+            "max": 123.53726959228516,
+            "mean": 2.825885517791903,
+            "absmean": 2.825885517791903,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.11.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 11.0,
+            "max": 11.0,
+            "mean": 11.0,
+            "absmean": 11.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.11.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3810126781463623,
+            "max": 0.30554789304733276,
+            "mean": -0.0003463389330379957,
+            "absmean": 0.07062518712998118,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.657416586465297e-08,
+              "orth_resid_RtR": 3.6574165870569925e-08,
+              "det": "sign=-1 log|det|=1.548e-08",
+              "singular_values": {
+                "min": 0.9999999638848475,
+                "max": 1.0000000353845828,
+                "cond": 1.000000071499738
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.11.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.032418034970760345,
+            "max": 123.09518432617188,
+            "mean": 3.0588258950738236,
+            "absmean": 3.0588258950738236,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.12.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 12.0,
+            "max": 12.0,
+            "mean": 12.0,
+            "absmean": 12.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.12.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33323848247528076,
+            "max": 0.3154204785823822,
+            "mean": -0.0013879994318590216,
+            "absmean": 0.07046062845347095,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.627684937135768e-08,
+              "orth_resid_RtR": 3.627684937010876e-08,
+              "det": "sign=-1 log|det|=-1.764e-08",
+              "singular_values": {
+                "min": 0.9999999634301509,
+                "max": 1.0000000350146254,
+                "cond": 1.0000000715844772
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.12.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0682159811258316,
+            "max": 138.98880004882812,
+            "mean": 2.720135329873301,
+            "absmean": 2.720135329873301,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.13.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 13.0,
+            "max": 13.0,
+            "mean": 13.0,
+            "absmean": 13.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.13.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.36061957478523254,
+            "max": 0.35890519618988037,
+            "mean": -0.0002448344959208523,
+            "absmean": 0.07061622183458946,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.631009278020955e-08,
+              "orth_resid_RtR": 3.6310092793261716e-08,
+              "det": "sign=1 log|det|=-4.796e-08",
+              "singular_values": {
+                "min": 0.9999999647272911,
+                "max": 1.0000000366792505,
+                "cond": 1.000000071951962
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.13.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.011045537889003754,
+            "max": 24.619129180908203,
+            "mean": 1.6875445999176009,
+            "absmean": 1.6875445999176009,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.14.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 14.0,
+            "max": 14.0,
+            "mean": 14.0,
+            "absmean": 14.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.14.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.32139065861701965,
+            "max": 0.3344219923019409,
+            "mean": -0.0005415561650291383,
+            "absmean": 0.0707411072368002,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.603400141598929e-08,
+              "orth_resid_RtR": 3.603400143282384e-08,
+              "det": "sign=-1 log|det|=-6.964e-08",
+              "singular_values": {
+                "min": 0.9999999656804411,
+                "max": 1.0000000344177244,
+                "cond": 1.0000000687372856
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.14.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0008812526939436793,
+            "max": 44.941673278808594,
+            "mean": 2.020464622341933,
+            "absmean": 2.020464622341933,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.15.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 15.0,
+            "max": 15.0,
+            "mean": 15.0,
+            "absmean": 15.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.15.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3393523097038269,
+            "max": 0.3267779052257538,
+            "mean": -0.000806434641702658,
+            "absmean": 0.07058567077954986,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6415826782500145e-08,
+              "orth_resid_RtR": 3.641582677523272e-08,
+              "det": "sign=1 log|det|=3.020e-08",
+              "singular_values": {
+                "min": 0.9999999647586066,
+                "max": 1.0000000359404768,
+                "cond": 1.0000000711818726
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.15.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.08603969216346741,
+            "max": 17.887144088745117,
+            "mean": 1.5391279822215438,
+            "absmean": 1.5391279822215438,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.16.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 16.0,
+            "max": 16.0,
+            "mean": 16.0,
+            "absmean": 16.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.16.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33184874057769775,
+            "max": 0.347843199968338,
+            "mean": 0.0007155864748264462,
+            "absmean": 0.0704884746737971,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.620620063754056e-08,
+              "orth_resid_RtR": 3.620620063218756e-08,
+              "det": "sign=1 log|det|=4.346e-08",
+              "singular_values": {
+                "min": 0.999999964644531,
+                "max": 1.000000035220825,
+                "cond": 1.0000000705762964
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.16.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.024746567010879517,
+            "max": 37.58684539794922,
+            "mean": 1.6032429220795166,
+            "absmean": 1.6032429220795166,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.17.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 17.0,
+            "max": 17.0,
+            "mean": 17.0,
+            "absmean": 17.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.17.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.4092165231704712,
+            "max": 0.2991175651550293,
+            "mean": -0.0015924367652823124,
+            "absmean": 0.07054330444859047,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6412346354908955e-08,
+              "orth_resid_RtR": 3.6412346357887064e-08,
+              "det": "sign=1 log|det|=-2.062e-08",
+              "singular_values": {
+                "min": 0.9999999651303896,
+                "max": 1.000000035499399,
+                "cond": 1.000000070369012
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.17.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.014333019964396954,
+            "max": 17.54798698425293,
+            "mean": 1.4514156658769934,
+            "absmean": 1.4514156658769934,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.18.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 18.0,
+            "max": 18.0,
+            "mean": 18.0,
+            "absmean": 18.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.18.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3361961841583252,
+            "max": 0.3523077070713043,
+            "mean": 0.0002401676602850067,
+            "absmean": 0.07049732606463133,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.642611562144988e-08,
+              "orth_resid_RtR": 3.6426115627021676e-08,
+              "det": "sign=1 log|det|=-2.134e-08",
+              "singular_values": {
+                "min": 0.9999999638855303,
+                "max": 1.0000000350623424,
+                "cond": 1.0000000711768147
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.18.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.16615934669971466,
+            "max": 44.51408767700195,
+            "mean": 1.6861762137850747,
+            "absmean": 1.6861762137850747,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.19.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 19.0,
+            "max": 19.0,
+            "mean": 19.0,
+            "absmean": 19.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.19.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3260051906108856,
+            "max": 0.35042625665664673,
+            "mean": 0.00041752153508817225,
+            "absmean": 0.07059859014726783,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.606833479509746e-08,
+              "orth_resid_RtR": 3.6068334791828246e-08,
+              "det": "sign=-1 log|det|=4.806e-08",
+              "singular_values": {
+                "min": 0.9999999651620219,
+                "max": 1.0000000360827501,
+                "cond": 1.0000000709207306
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.19.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.18491773307323456,
+            "max": 27.572284698486328,
+            "mean": 1.7614157871576026,
+            "absmean": 1.7614157871576026,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.20.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 20.0,
+            "max": 20.0,
+            "mean": 20.0,
+            "absmean": 20.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.20.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.34671124815940857,
+            "max": 0.31847289204597473,
+            "mean": -0.00030497233178317096,
+            "absmean": 0.0708667137331942,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6484155027035555e-08,
+              "orth_resid_RtR": 3.648415503252966e-08,
+              "det": "sign=-1 log|det|=-4.936e-08",
+              "singular_values": {
+                "min": 0.9999999639542047,
+                "max": 1.0000000356774938,
+                "cond": 1.0000000717232918
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.20.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.015362749807536602,
+            "max": 16.906400680541992,
+            "mean": 1.4664981311143492,
+            "absmean": 1.4664981311143492,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.21.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 21.0,
+            "max": 21.0,
+            "mean": 21.0,
+            "absmean": 21.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.21.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.32349684834480286,
+            "max": 0.34700652956962585,
+            "mean": 6.620565803666656e-05,
+            "absmean": 0.07093508992542391,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.639039098086999e-08,
+              "orth_resid_RtR": 3.6390390992740186e-08,
+              "det": "sign=1 log|det|=2.161e-08",
+              "singular_values": {
+                "min": 0.9999999659138895,
+                "max": 1.00000003595197,
+                "cond": 1.0000000700380829
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.21.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.016754217445850372,
+            "max": 65.4012451171875,
+            "mean": 2.0154345032642595,
+            "absmean": 2.0154345032642595,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.22.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 22.0,
+            "max": 22.0,
+            "mean": 22.0,
+            "absmean": 22.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.22.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33233559131622314,
+            "max": 0.32224828004837036,
+            "mean": -0.0007966179130213247,
+            "absmean": 0.07061160855295937,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.5974165798378427e-08,
+              "orth_resid_RtR": 3.5974165794798673e-08,
+              "det": "sign=1 log|det|=3.924e-08",
+              "singular_values": {
+                "min": 0.9999999660702769,
+                "max": 1.0000000369032849,
+                "cond": 1.0000000708330103
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.22.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.015032824128866196,
+            "max": 36.76584243774414,
+            "mean": 1.6569933426799253,
+            "absmean": 1.6569933426799253,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.23.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 23.0,
+            "max": 23.0,
+            "mean": 23.0,
+            "absmean": 23.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.23.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.32017162442207336,
+            "max": 0.3349134624004364,
+            "mean": -0.0002921207101864165,
+            "absmean": 0.07079590904926053,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.602374542183546e-08,
+              "orth_resid_RtR": 3.6023745421279764e-08,
+              "det": "sign=-1 log|det|=3.085e-08",
+              "singular_values": {
+                "min": 0.9999999658784898,
+                "max": 1.0000000353323513,
+                "cond": 1.0000000694538638
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.23.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.015987111255526543,
+            "max": 32.082847595214844,
+            "mean": 1.6293948766688118,
+            "absmean": 1.6293948766688118,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.24.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 24.0,
+            "max": 24.0,
+            "mean": 24.0,
+            "absmean": 24.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.24.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3277921676635742,
+            "max": 0.3252449035644531,
+            "mean": 0.00020769205635634558,
+            "absmean": 0.07055606831381495,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.669565643138921e-08,
+              "orth_resid_RtR": 3.669565644854209e-08,
+              "det": "sign=1 log|det|=-3.955e-08",
+              "singular_values": {
+                "min": 0.9999999643953281,
+                "max": 1.0000000350398375,
+                "cond": 1.0000000706445118
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.24.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.004870432894676924,
+            "max": 22.588802337646484,
+            "mean": 1.3176624125480885,
+            "absmean": 1.3176624125480885,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.25.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 25.0,
+            "max": 25.0,
+            "mean": 25.0,
+            "absmean": 25.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.25.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3275606036186218,
+            "max": 0.374700129032135,
+            "mean": 0.0007710323292177412,
+            "absmean": 0.07065228005848315,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.628734178484084e-08,
+              "orth_resid_RtR": 3.6287341769485346e-08,
+              "det": "sign=-1 log|det|=8.701e-08",
+              "singular_values": {
+                "min": 0.9999999663455909,
+                "max": 1.000000034995914,
+                "cond": 1.0000000686503254
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.25.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.016953086480498314,
+            "max": 73.09330749511719,
+            "mean": 2.271583341382211,
+            "absmean": 2.271583341382211,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.26.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 26.0,
+            "max": 26.0,
+            "mean": 26.0,
+            "absmean": 26.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.26.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.324848473072052,
+            "max": 0.38352349400520325,
+            "mean": 0.0011234611319803633,
+            "absmean": 0.07070422552218458,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.603586696155758e-08,
+              "orth_resid_RtR": 3.603586697345268e-08,
+              "det": "sign=1 log|det|=-1.868e-08",
+              "singular_values": {
+                "min": 0.9999999644793328,
+                "max": 1.000000035628725,
+                "cond": 1.0000000711493948
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.26.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.008247640915215015,
+            "max": 63.308380126953125,
+            "mean": 1.8198250551504316,
+            "absmean": 1.8198250551504316,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.27.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 27.0,
+            "max": 27.0,
+            "mean": 27.0,
+            "absmean": 27.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.27.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.34031006693840027,
+            "max": 0.338227778673172,
+            "mean": -0.0006085256600816026,
+            "absmean": 0.07059699009324757,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.5811640549151306e-08,
+              "orth_resid_RtR": 3.581164054060243e-08,
+              "det": "sign=-1 log|det|=6.343e-08",
+              "singular_values": {
+                "min": 0.9999999656030735,
+                "max": 1.000000035671302,
+                "cond": 1.0000000700682308
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.27.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.008134124800562859,
+            "max": 111.52774810791016,
+            "mean": 2.2286474942811765,
+            "absmean": 2.2286474942811765,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.28.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 28.0,
+            "max": 28.0,
+            "mean": 28.0,
+            "absmean": 28.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.28.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.36614641547203064,
+            "max": 0.3728308081626892,
+            "mean": 0.00024733298330625875,
+            "absmean": 0.07064809599345312,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.635907183660378e-08,
+              "orth_resid_RtR": 3.635907184208342e-08,
+              "det": "sign=1 log|det|=6.563e-09",
+              "singular_values": {
+                "min": 0.9999999656217985,
+                "max": 1.0000000359885501,
+                "cond": 1.000000070366754
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.28.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.035138338804244995,
+            "max": 160.9507598876953,
+            "mean": 3.14713543956168,
+            "absmean": 3.14713543956168,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.29.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 29.0,
+            "max": 29.0,
+            "mean": 29.0,
+            "absmean": 29.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.29.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33373063802719116,
+            "max": 0.3380361497402191,
+            "mean": 0.00010193276753289737,
+            "absmean": 0.07080573303777316,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.641452616848065e-08,
+              "orth_resid_RtR": 3.641452616924906e-08,
+              "det": "sign=1 log|det|=3.322e-08",
+              "singular_values": {
+                "min": 0.9999999658699334,
+                "max": 1.0000000362001862,
+                "cond": 1.0000000703302552
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.29.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0048131258226931095,
+            "max": 29.317546844482422,
+            "mean": 1.55818699428346,
+            "absmean": 1.55818699428346,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.30.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 30.0,
+            "max": 30.0,
+            "mean": 30.0,
+            "absmean": 30.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.30.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.31986668705940247,
+            "max": 0.342207670211792,
+            "mean": -5.3372927020317595e-05,
+            "absmean": 0.07053468671434895,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.608621228770245e-08,
+              "orth_resid_RtR": 3.6086212283367757e-08,
+              "det": "sign=-1 log|det|=-5.740e-10",
+              "singular_values": {
+                "min": 0.9999999663009524,
+                "max": 1.000000035038687,
+                "cond": 1.0000000687377368
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.30.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0391402430832386,
+            "max": 116.66754913330078,
+            "mean": 3.283789817854995,
+            "absmean": 3.283789817854995,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.31.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 31.0,
+            "max": 31.0,
+            "mean": 31.0,
+            "absmean": 31.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.31.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3551565408706665,
+            "max": 0.33602479100227356,
+            "mean": -0.00012981782887723677,
+            "absmean": 0.0707333854777351,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.626123370163741e-08,
+              "orth_resid_RtR": 3.626123370354792e-08,
+              "det": "sign=1 log|det|=5.013e-09",
+              "singular_values": {
+                "min": 0.9999999660282417,
+                "max": 1.0000000353333902,
+                "cond": 1.000000069305151
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.31.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.008707171306014061,
+            "max": 28.677597045898438,
+            "mean": 1.7278040475357557,
+            "absmean": 1.7278040475357557,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.32.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 32.0,
+            "max": 32.0,
+            "mean": 32.0,
+            "absmean": 32.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.32.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.35094335675239563,
+            "max": 0.3436325490474701,
+            "mean": -0.0006400814115569142,
+            "absmean": 0.07069616469362183,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.623199592486849e-08,
+              "orth_resid_RtR": 3.623199592150391e-08,
+              "det": "sign=1 log|det|=-5.304e-09",
+              "singular_values": {
+                "min": 0.9999999654989806,
+                "max": 1.0000000348480254,
+                "cond": 1.0000000693490472
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.32.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.13286685943603516,
+            "max": 83.9054183959961,
+            "mean": 2.2464699631091207,
+            "absmean": 2.2464699631091207,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.33.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 33.0,
+            "max": 33.0,
+            "mean": 33.0,
+            "absmean": 33.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.33.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.35562437772750854,
+            "max": 0.33142685890197754,
+            "mean": 0.0006220682709037195,
+            "absmean": 0.070716314226132,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.645920772620437e-08,
+              "orth_resid_RtR": 3.645920772242026e-08,
+              "det": "sign=1 log|det|=8.476e-09",
+              "singular_values": {
+                "min": 0.9999999646193685,
+                "max": 1.0000000354465306,
+                "cond": 1.0000000708271646
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.33.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.25464069843292236,
+            "max": 19.014925003051758,
+            "mean": 1.3356118265073746,
+            "absmean": 1.3356118265073746,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.34.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 34.0,
+            "max": 34.0,
+            "mean": 34.0,
+            "absmean": 34.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.34.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33651676774024963,
+            "max": 0.32295334339141846,
+            "mean": 6.780401314904205e-05,
+            "absmean": 0.07062215058520599,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.525052572313356e-08,
+              "orth_resid_RtR": 3.5250525730818015e-08,
+              "det": "sign=-1 log|det|=-1.614e-08",
+              "singular_values": {
+                "min": 0.9999999661231537,
+                "max": 1.0000000345864026,
+                "cond": 1.0000000684632513
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.34.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.012642179615795612,
+            "max": 110.34764862060547,
+            "mean": 2.5552793075112277,
+            "absmean": 2.5552793075112277,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.35.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 35.0,
+            "max": 35.0,
+            "mean": 35.0,
+            "absmean": 35.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.35.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.306090772151947,
+            "max": 0.34866005182266235,
+            "mean": 0.0006455067329766417,
+            "absmean": 0.07065581230011653,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6242120931638356e-08,
+              "orth_resid_RtR": 3.6242120938803064e-08,
+              "det": "sign=1 log|det|=-3.864e-08",
+              "singular_values": {
+                "min": 0.9999999659994814,
+                "max": 1.0000000343779254,
+                "cond": 1.0000000683784462
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.35.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.036838892847299576,
+            "max": 66.2624740600586,
+            "mean": 2.2528608060092665,
+            "absmean": 2.2528608060092665,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        }
+      ]
+    },
+    {
+      "file": "v_rotation_sst_r_h_pbr.pt",
+      "bytes": 2399261,
+      "sha256_16": "18815a709923f79a",
+      "container": "dict",
+      "leaves": [
+        {
+          "key": "format_version",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 1.0,
+            "max": 1.0,
+            "mean": 1.0,
+            "absmean": 1.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "objective",
+          "shape": [],
+          "dtype": "str",
+          "stats": null,
+          "orth": []
+        },
+        {
+          "key": "source_grouping",
+          "shape": [],
+          "dtype": "str",
+          "stats": null,
+          "orth": []
+        },
+        {
+          "key": "layers.0.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "absmean": 0.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 1
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.0.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.38112738728523254,
+            "max": 0.34402453899383545,
+            "mean": 0.0007740978046150149,
+            "absmean": 0.07086585735659556,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.574469172786554e-08,
+              "orth_resid_RtR": 3.574469172487106e-08,
+              "det": "sign=-1 log|det|=6.991e-09",
+              "singular_values": {
+                "min": 0.9999999670339957,
+                "max": 1.0000000345001339,
+                "cond": 1.0000000674661405
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.0.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.00023466428683605045,
+            "max": 0.005112237296998501,
+            "mean": 0.0007372869246182745,
+            "absmean": 0.0007372869246182745,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.1.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 1.0,
+            "max": 1.0,
+            "mean": 1.0,
+            "absmean": 1.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.1.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3143790364265442,
+            "max": 0.36270543932914734,
+            "mean": -0.0009842294442987676,
+            "absmean": 0.07092636693946952,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.5347010793246886e-08,
+              "orth_resid_RtR": 3.5347010783078593e-08,
+              "det": "sign=1 log|det|=3.286e-08",
+              "singular_values": {
+                "min": 0.9999999658253185,
+                "max": 1.0000000355917693,
+                "cond": 1.0000000697664533
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.1.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.000911000301130116,
+            "max": 0.011632428504526615,
+            "mean": 0.0021765178216810455,
+            "absmean": 0.0021765178216810455,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.2.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "absmean": 2.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.2.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3164518177509308,
+            "max": 0.3346860706806183,
+            "mean": 0.000458561200924891,
+            "absmean": 0.07047732047277636,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.618771121524353e-08,
+              "orth_resid_RtR": 3.618771121600276e-08,
+              "det": "sign=1 log|det|=3.247e-08",
+              "singular_values": {
+                "min": 0.9999999654203403,
+                "max": 1.000000034842331,
+                "cond": 1.000000069421993
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.2.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0015207910910248756,
+            "max": 0.014709805138409138,
+            "mean": 0.003481543410998711,
+            "absmean": 0.003481543410998711,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.3.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 3.0,
+            "max": 3.0,
+            "mean": 3.0,
+            "absmean": 3.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.3.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3723728656768799,
+            "max": 0.31627440452575684,
+            "mean": 7.468928874904135e-06,
+            "absmean": 0.07051773211786208,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6480928956819076e-08,
+              "orth_resid_RtR": 3.64809289684087e-08,
+              "det": "sign=-1 log|det|=-1.347e-08",
+              "singular_values": {
+                "min": 0.9999999634347849,
+                "max": 1.0000000356588128,
+                "cond": 1.0000000722240305
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.3.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.002843204652890563,
+            "max": 0.03295179083943367,
+            "mean": 0.006441423043725081,
+            "absmean": 0.006441423043725081,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.4.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 4.0,
+            "max": 4.0,
+            "mean": 4.0,
+            "absmean": 4.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.4.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3372178077697754,
+            "max": 0.3651648759841919,
+            "mean": 2.0029796434537644e-05,
+            "absmean": 0.07071896715833795,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.630153586690581e-08,
+              "orth_resid_RtR": 3.6301535882313104e-08,
+              "det": "sign=-1 log|det|=-1.058e-07",
+              "singular_values": {
+                "min": 0.9999999637639921,
+                "max": 1.0000000347333369,
+                "cond": 1.0000000709693473
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.4.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.005504747852683067,
+            "max": 0.04032694920897484,
+            "mean": 0.011188898632099153,
+            "absmean": 0.011188898632099153,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.5.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 5.0,
+            "max": 5.0,
+            "mean": 5.0,
+            "absmean": 5.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.5.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33791807293891907,
+            "max": 0.37292468547821045,
+            "mean": -0.0005736457594643363,
+            "absmean": 0.07067016390050712,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.62563460319723e-08,
+              "orth_resid_RtR": 3.625634601188118e-08,
+              "det": "sign=1 log|det|=5.726e-08",
+              "singular_values": {
+                "min": 0.9999999650144061,
+                "max": 1.0000000361830277,
+                "cond": 1.000000071168624
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.5.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0054526436142623425,
+            "max": 0.0793180838227272,
+            "mean": 0.013673479592398508,
+            "absmean": 0.013673479592398508,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.6.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 6.0,
+            "max": 6.0,
+            "mean": 6.0,
+            "absmean": 6.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.6.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3445136249065399,
+            "max": 0.36808881163597107,
+            "mean": -0.0008008823461224668,
+            "absmean": 0.07080416814407958,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.632773199729654e-08,
+              "orth_resid_RtR": 3.6327731994368766e-08,
+              "det": "sign=1 log|det|=1.770e-08",
+              "singular_values": {
+                "min": 0.9999999646342193,
+                "max": 1.000000035098762,
+                "cond": 1.000000070464545
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.6.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.009761598892509937,
+            "max": 0.06203676015138626,
+            "mean": 0.018869144485506695,
+            "absmean": 0.018869144485506695,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.7.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 7.0,
+            "max": 7.0,
+            "mean": 7.0,
+            "absmean": 7.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.7.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.2873292565345764,
+            "max": 0.3204308748245239,
+            "mean": 0.0006651119402015029,
+            "absmean": 0.07091324312066602,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.632829523658577e-08,
+              "orth_resid_RtR": 3.632829523689259e-08,
+              "det": "sign=1 log|det|=1.383e-08",
+              "singular_values": {
+                "min": 0.9999999633367036,
+                "max": 1.0000000348092617,
+                "cond": 1.0000000714725608
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.7.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.02143106237053871,
+            "max": 0.3606286346912384,
+            "mean": 0.04458961576165166,
+            "absmean": 0.04458961576165166,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.8.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 8.0,
+            "max": 8.0,
+            "mean": 8.0,
+            "absmean": 8.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.8.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3788892924785614,
+            "max": 0.34833449125289917,
+            "mean": -0.0006227801387149179,
+            "absmean": 0.07063737536643572,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.659823228863423e-08,
+              "orth_resid_RtR": 3.6598232280379965e-08,
+              "det": "sign=-1 log|det|=7.752e-08",
+              "singular_values": {
+                "min": 0.9999999662334501,
+                "max": 1.0000000346461835,
+                "cond": 1.0000000684127357
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.8.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.03977441415190697,
+            "max": 0.21626026928424835,
+            "mean": 0.07585794522310607,
+            "absmean": 0.07585794522310607,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.9.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 9.0,
+            "max": 9.0,
+            "mean": 9.0,
+            "absmean": 9.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.9.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.35891193151474,
+            "max": 0.3766551911830902,
+            "mean": 0.001172139954992213,
+            "absmean": 0.07050840240336798,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6385697777259765e-08,
+              "orth_resid_RtR": 3.638569777595875e-08,
+              "det": "sign=1 log|det|=-3.708e-08",
+              "singular_values": {
+                "min": 0.9999999642750396,
+                "max": 1.0000000368345647,
+                "cond": 1.0000000725595277
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.9.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0421488918364048,
+            "max": 0.32141467928886414,
+            "mean": 0.08172362748882733,
+            "absmean": 0.08172362748882733,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.10.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 10.0,
+            "max": 10.0,
+            "mean": 10.0,
+            "absmean": 10.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.10.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3288993537425995,
+            "max": 0.3413427174091339,
+            "mean": -0.0006453964547035174,
+            "absmean": 0.07059600598216487,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.618776874201576e-08,
+              "orth_resid_RtR": 3.618776873335212e-08,
+              "det": "sign=-1 log|det|=4.820e-08",
+              "singular_values": {
+                "min": 0.9999999644996088,
+                "max": 1.0000000340596236,
+                "cond": 1.0000000695600173
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.10.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.07844367623329163,
+            "max": 0.6727107763290405,
+            "mean": 0.1602108915685676,
+            "absmean": 0.1602108915685676,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.11.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 11.0,
+            "max": 11.0,
+            "mean": 11.0,
+            "absmean": 11.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.11.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.34171193838119507,
+            "max": 0.34083032608032227,
+            "mean": 0.0002205671489224903,
+            "absmean": 0.07062469389612491,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.605396344384751e-08,
+              "orth_resid_RtR": 3.60539634370779e-08,
+              "det": "sign=-1 log|det|=2.348e-08",
+              "singular_values": {
+                "min": 0.9999999651140957,
+                "max": 1.00000003449887,
+                "cond": 1.0000000693847766
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.11.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0393482968211174,
+            "max": 0.27732163667678833,
+            "mean": 0.08217618201160803,
+            "absmean": 0.08217618201160803,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.12.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 12.0,
+            "max": 12.0,
+            "mean": 12.0,
+            "absmean": 12.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.12.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3272865414619446,
+            "max": 0.33719348907470703,
+            "mean": -0.0004522454384172647,
+            "absmean": 0.07072304418228947,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.625976705654064e-08,
+              "orth_resid_RtR": 3.625976703498863e-08,
+              "det": "sign=1 log|det|=7.028e-08",
+              "singular_values": {
+                "min": 0.9999999632914377,
+                "max": 1.0000000354171512,
+                "cond": 1.000000072125716
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.12.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.04823381453752518,
+            "max": 0.40186429023742676,
+            "mean": 0.10697270761011168,
+            "absmean": 0.10697270761011168,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.13.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 13.0,
+            "max": 13.0,
+            "mean": 13.0,
+            "absmean": 13.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.13.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3581780791282654,
+            "max": 0.33281320333480835,
+            "mean": 0.000326933849503136,
+            "absmean": 0.07096444784430997,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.61063919344085e-08,
+              "orth_resid_RtR": 3.610639194261228e-08,
+              "det": "sign=1 log|det|=-2.754e-08",
+              "singular_values": {
+                "min": 0.9999999647459189,
+                "max": 1.000000034026097,
+                "cond": 1.0000000692801805
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.13.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.040640734136104584,
+            "max": 1.8006160259246826,
+            "mean": 0.13200994511134923,
+            "absmean": 0.13200994511134923,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.14.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 14.0,
+            "max": 14.0,
+            "mean": 14.0,
+            "absmean": 14.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.14.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3376126289367676,
+            "max": 0.3391157388687134,
+            "mean": -6.301256541154862e-06,
+            "absmean": 0.07053551880946543,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6360401590999387e-08,
+              "orth_resid_RtR": 3.6360401593341625e-08,
+              "det": "sign=1 log|det|=2.526e-08",
+              "singular_values": {
+                "min": 0.9999999650618274,
+                "max": 1.0000000346008002,
+                "cond": 1.0000000695389752
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.14.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.0771845132112503,
+            "max": 1.5354866981506348,
+            "mean": 0.18186619342304766,
+            "absmean": 0.18186619342304766,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.15.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 15.0,
+            "max": 15.0,
+            "mean": 15.0,
+            "absmean": 15.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.15.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.32883331179618835,
+            "max": 0.3230329155921936,
+            "mean": -0.0008024984117637676,
+            "absmean": 0.07055739420459656,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6491267810315606e-08,
+              "orth_resid_RtR": 3.6491267805367186e-08,
+              "det": "sign=-1 log|det|=4.347e-08",
+              "singular_values": {
+                "min": 0.9999999644398532,
+                "max": 1.0000000351482188,
+                "cond": 1.000000070708368
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.15.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.06959792226552963,
+            "max": 5.485389709472656,
+            "mean": 0.262341862777248,
+            "absmean": 0.262341862777248,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.16.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 16.0,
+            "max": 16.0,
+            "mean": 16.0,
+            "absmean": 16.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.16.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.39663901925086975,
+            "max": 0.3329370617866516,
+            "mean": -0.0003221172949642581,
+            "absmean": 0.07060608591246578,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.606481727999918e-08,
+              "orth_resid_RtR": 3.606481726161526e-08,
+              "det": "sign=1 log|det|=1.449e-08",
+              "singular_values": {
+                "min": 0.9999999653138897,
+                "max": 1.0000000369191704,
+                "cond": 1.0000000716052833
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.16.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.13391967117786407,
+            "max": 6.468742847442627,
+            "mean": 0.3780094769317657,
+            "absmean": 0.3780094769317657,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.17.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 17.0,
+            "max": 17.0,
+            "mean": 17.0,
+            "absmean": 17.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.17.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3306708335876465,
+            "max": 0.3270076513290405,
+            "mean": 0.0009160450548193477,
+            "absmean": 0.07060536204070256,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.63824781772094e-08,
+              "orth_resid_RtR": 3.638247817850808e-08,
+              "det": "sign=1 log|det|=-3.316e-08",
+              "singular_values": {
+                "min": 0.999999965377509,
+                "max": 1.0000000348871365,
+                "cond": 1.0000000695096298
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.17.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.10374792665243149,
+            "max": 11.496779441833496,
+            "mean": 0.3418805106775835,
+            "absmean": 0.3418805106775835,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.18.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 18.0,
+            "max": 18.0,
+            "mean": 18.0,
+            "absmean": 18.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.18.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3552420437335968,
+            "max": 0.34450042247772217,
+            "mean": -0.00013557176049302025,
+            "absmean": 0.07071572820384693,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6143153353949314e-08,
+              "orth_resid_RtR": 3.61431533624144e-08,
+              "det": "sign=1 log|det|=-2.977e-08",
+              "singular_values": {
+                "min": 0.9999999655767432,
+                "max": 1.0000000350478355,
+                "cond": 1.0000000694710947
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.18.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.1358223557472229,
+            "max": 11.033416748046875,
+            "mean": 0.5079886254388839,
+            "absmean": 0.5079886254388839,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.19.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 19.0,
+            "max": 19.0,
+            "mean": 19.0,
+            "absmean": 19.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.19.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3768368065357208,
+            "max": 0.3382820785045624,
+            "mean": -0.0008619348828574624,
+            "absmean": 0.07093655405974697,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.616359980398712e-08,
+              "orth_resid_RtR": 3.616359980656687e-08,
+              "det": "sign=1 log|det|=1.468e-08",
+              "singular_values": {
+                "min": 0.9999999661289782,
+                "max": 1.000000035219258,
+                "cond": 1.0000000690902822
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.19.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.21538963913917542,
+            "max": 2.202134370803833,
+            "mean": 0.45872466056607664,
+            "absmean": 0.45872466056607664,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.20.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 20.0,
+            "max": 20.0,
+            "mean": 20.0,
+            "absmean": 20.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.20.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3167915344238281,
+            "max": 0.3299902379512787,
+            "mean": 0.00045592229624735747,
+            "absmean": 0.07068454161944493,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6115821564098555e-08,
+              "orth_resid_RtR": 3.6115821545067094e-08,
+              "det": "sign=1 log|det|=9.470e-08",
+              "singular_values": {
+                "min": 0.999999966152222,
+                "max": 1.0000000362349628,
+                "cond": 1.0000000700827432
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.20.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.21729382872581482,
+            "max": 1.5774716138839722,
+            "mean": 0.4476940247695893,
+            "absmean": 0.4476940247695893,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.21.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 21.0,
+            "max": 21.0,
+            "mean": 21.0,
+            "absmean": 21.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.21.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33812397718429565,
+            "max": 0.3948744535446167,
+            "mean": -0.0007491452872619986,
+            "absmean": 0.0704997575908054,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6101689331140574e-08,
+              "orth_resid_RtR": 3.610168933844172e-08,
+              "det": "sign=1 log|det|=-4.722e-08",
+              "singular_values": {
+                "min": 0.9999999649586033,
+                "max": 1.0000000339903437,
+                "cond": 1.0000000690317428
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.21.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.28165462613105774,
+            "max": 1.8122317790985107,
+            "mean": 0.5845098083373159,
+            "absmean": 0.5845098083373159,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.22.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 22.0,
+            "max": 22.0,
+            "mean": 22.0,
+            "absmean": 22.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.22.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.32406604290008545,
+            "max": 0.30474328994750977,
+            "mean": 0.0005657964175871388,
+            "absmean": 0.07079558005527331,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.563615121221107e-08,
+              "orth_resid_RtR": 3.563615119934529e-08,
+              "det": "sign=1 log|det|=4.077e-08",
+              "singular_values": {
+                "min": 0.9999999669045074,
+                "max": 1.0000000346584803,
+                "cond": 1.000000067753975
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.22.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.43828248977661133,
+            "max": 2.584306478500366,
+            "mean": 0.8454272865783423,
+            "absmean": 0.8454272865783423,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.23.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 23.0,
+            "max": 23.0,
+            "mean": 23.0,
+            "absmean": 23.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.23.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33476322889328003,
+            "max": 0.29580143094062805,
+            "mean": 0.00024175686865901547,
+            "absmean": 0.07054443523038367,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.563394955257452e-08,
+              "orth_resid_RtR": 3.563394954406637e-08,
+              "det": "sign=-1 log|det|=9.827e-08",
+              "singular_values": {
+                "min": 0.9999999670121142,
+                "max": 1.00000003547309,
+                "cond": 1.000000068460978
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.23.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.48913365602493286,
+            "max": 2.6135120391845703,
+            "mean": 0.9365963104646653,
+            "absmean": 0.9365963104646653,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.24.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 24.0,
+            "max": 24.0,
+            "mean": 24.0,
+            "absmean": 24.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.24.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.36459746956825256,
+            "max": 0.3381498456001282,
+            "mean": -0.000664079235304621,
+            "absmean": 0.07074452436066683,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.620325596071911e-08,
+              "orth_resid_RtR": 3.620325596350361e-08,
+              "det": "sign=-1 log|det|=-5.313e-09",
+              "singular_values": {
+                "min": 0.999999964042169,
+                "max": 1.0000000341885473,
+                "cond": 1.000000070146381
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.24.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.8534908890724182,
+            "max": 5.144581317901611,
+            "mean": 1.6931224283762276,
+            "absmean": 1.6931224283762276,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.25.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 25.0,
+            "max": 25.0,
+            "mean": 25.0,
+            "absmean": 25.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.25.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33204948902130127,
+            "max": 0.34558820724487305,
+            "mean": 0.00032391411206644793,
+            "absmean": 0.07084741045428478,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.587926765109459e-08,
+              "orth_resid_RtR": 3.587926765303164e-08,
+              "det": "sign=1 log|det|=1.968e-08",
+              "singular_values": {
+                "min": 0.9999999661380685,
+                "max": 1.0000000346591762,
+                "cond": 1.00000006852111
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.25.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 0.7174705266952515,
+            "max": 5.0366411209106445,
+            "mean": 1.411303069908172,
+            "absmean": 1.411303069908172,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.26.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 26.0,
+            "max": 26.0,
+            "mean": 26.0,
+            "absmean": 26.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.26.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.33027350902557373,
+            "max": 0.3454059660434723,
+            "mean": 0.0005985778273001341,
+            "absmean": 0.07083450650022513,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.592367278943759e-08,
+              "orth_resid_RtR": 3.592367280060471e-08,
+              "det": "sign=1 log|det|=-5.962e-08",
+              "singular_values": {
+                "min": 0.9999999643296767,
+                "max": 1.0000000339403474,
+                "cond": 1.0000000696106732
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.26.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 1.2592217922210693,
+            "max": 6.465604782104492,
+            "mean": 2.2213834021240473,
+            "absmean": 2.2213834021240473,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.27.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 27.0,
+            "max": 27.0,
+            "mean": 27.0,
+            "absmean": 27.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.27.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3445275127887726,
+            "max": 0.37993794679641724,
+            "mean": 0.0006647615123912889,
+            "absmean": 0.07079483797728084,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6654378699704616e-08,
+              "orth_resid_RtR": 3.665437870190074e-08,
+              "det": "sign=1 log|det|=-2.626e-08",
+              "singular_values": {
+                "min": 0.9999999646669534,
+                "max": 1.0000000357677639,
+                "cond": 1.000000071100813
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.27.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 1.3796907663345337,
+            "max": 10.752479553222656,
+            "mean": 2.6760424645617604,
+            "absmean": 2.6760424645617604,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.28.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 28.0,
+            "max": 28.0,
+            "mean": 28.0,
+            "absmean": 28.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.28.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.31769314408302307,
+            "max": 0.35804757475852966,
+            "mean": -0.0012763806538648448,
+            "absmean": 0.0707548587288244,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6276792466885905e-08,
+              "orth_resid_RtR": 3.627679247440734e-08,
+              "det": "sign=1 log|det|=3.354e-09",
+              "singular_values": {
+                "min": 0.9999999628910534,
+                "max": 1.000000035042172,
+                "cond": 1.0000000721511213
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.28.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 1.5240755081176758,
+            "max": 14.836200714111328,
+            "mean": 3.1168641615659,
+            "absmean": 3.1168641615659,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.29.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 29.0,
+            "max": 29.0,
+            "mean": 29.0,
+            "absmean": 29.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.29.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3602769672870636,
+            "max": 0.3797805905342102,
+            "mean": 0.0009718126999460619,
+            "absmean": 0.07047274425407357,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.613522190688013e-08,
+              "orth_resid_RtR": 3.6135221920875195e-08,
+              "det": "sign=-1 log|det|=-1.940e-08",
+              "singular_values": {
+                "min": 0.9999999636765653,
+                "max": 1.0000000333936352,
+                "cond": 1.0000000697170723
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.29.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 4.1574482917785645,
+            "max": 15.61022663116455,
+            "mean": 7.320720009505749,
+            "absmean": 7.320720009505749,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.30.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 30.0,
+            "max": 30.0,
+            "mean": 30.0,
+            "absmean": 30.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.30.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.32803434133529663,
+            "max": 0.353049635887146,
+            "mean": -0.0003355831683855004,
+            "absmean": 0.07059545631103908,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.5963411473349034e-08,
+              "orth_resid_RtR": 3.596341148239049e-08,
+              "det": "sign=-1 log|det|=-2.858e-08",
+              "singular_values": {
+                "min": 0.9999999635206669,
+                "max": 1.0000000349907232,
+                "cond": 1.000000071470059
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.30.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 4.262976169586182,
+            "max": 37.17033767700195,
+            "mean": 7.7197294645011425,
+            "absmean": 7.7197294645011425,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.31.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 31.0,
+            "max": 31.0,
+            "mean": 31.0,
+            "absmean": 31.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.31.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3475387692451477,
+            "max": 0.3233906626701355,
+            "mean": -0.0008169407165300457,
+            "absmean": 0.07088837771621204,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.584331970244755e-08,
+              "orth_resid_RtR": 3.584331969787138e-08,
+              "det": "sign=-1 log|det|=4.307e-08",
+              "singular_values": {
+                "min": 0.9999999658407572,
+                "max": 1.000000034637877,
+                "cond": 1.0000000687971222
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.31.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 6.53871488571167,
+            "max": 27.128623962402344,
+            "mean": 10.966616928577423,
+            "absmean": 10.966616928577423,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.32.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 32.0,
+            "max": 32.0,
+            "mean": 32.0,
+            "absmean": 32.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.32.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.34865567088127136,
+            "max": 0.3506025969982147,
+            "mean": 9.852279329086722e-05,
+            "absmean": 0.07054996926565332,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.6156981642050314e-08,
+              "orth_resid_RtR": 3.615698163520933e-08,
+              "det": "sign=1 log|det|=7.949e-08",
+              "singular_values": {
+                "min": 0.9999999658921602,
+                "max": 1.0000000353903578,
+                "cond": 1.0000000694981999
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.32.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 9.129186630249023,
+            "max": 60.2708740234375,
+            "mean": 16.43347129970789,
+            "absmean": 16.43347129970789,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.33.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 33.0,
+            "max": 33.0,
+            "mean": 33.0,
+            "absmean": 33.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.33.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.35434943437576294,
+            "max": 0.3505752384662628,
+            "mean": -0.0004164529459608213,
+            "absmean": 0.07076575083515058,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.590053102628183e-08,
+              "orth_resid_RtR": 3.5900531031650204e-08,
+              "det": "sign=-1 log|det|=-3.343e-08",
+              "singular_values": {
+                "min": 0.9999999642650675,
+                "max": 1.0000000350097726,
+                "cond": 1.0000000707447076
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.33.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 21.270910263061523,
+            "max": 87.78349304199219,
+            "mean": 35.57463780045509,
+            "absmean": 35.57463780045509,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.34.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 34.0,
+            "max": 34.0,
+            "mean": 34.0,
+            "absmean": 34.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.34.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.3210006058216095,
+            "max": 0.3259967863559723,
+            "mean": 0.00018489860581449857,
+            "absmean": 0.0707462613878519,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.614100543780388e-08,
+              "orth_resid_RtR": 3.6141005424552505e-08,
+              "det": "sign=-1 log|det|=3.151e-08",
+              "singular_values": {
+                "min": 0.9999999642740707,
+                "max": 1.0000000339030508,
+                "cond": 1.0000000696289826
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.34.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 15.575235366821289,
+            "max": 270.4718933105469,
+            "mean": 30.64263464510441,
+            "absmean": 30.64263464510441,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.35.layer_id",
+          "shape": [
+            1
+          ],
+          "dtype": "int",
+          "stats": {
+            "min": 35.0,
+            "max": 35.0,
+            "mean": 35.0,
+            "absmean": 35.0,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        },
+        {
+          "key": "layers.35.rotation",
+          "shape": [
+            128,
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": -0.34490931034088135,
+            "max": 0.37760618329048157,
+            "mean": -0.0004588839528261515,
+            "absmean": 0.0705927814266987,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": [
+            {
+              "index": [],
+              "n": 128,
+              "orth_resid_RRt": 3.592826796073331e-08,
+              "orth_resid_RtR": 3.5928267961053056e-08,
+              "det": "sign=-1 log|det|=1.651e-08",
+              "singular_values": {
+                "min": 0.9999999656751606,
+                "max": 1.0000000340959794,
+                "cond": 1.0000000684208212
+              },
+              "is_orthogonal": true
+            }
+          ]
+        },
+        {
+          "key": "layers.35.eigenvalues",
+          "shape": [
+            128
+          ],
+          "dtype": "torch.float32",
+          "stats": {
+            "min": 6.880468368530273,
+            "max": 66.75868225097656,
+            "mean": 13.878707975149155,
+            "absmean": 13.878707975149155,
+            "n_nan": 0,
+            "n_inf": 0,
+            "n_zero": 0
+          },
+          "orth": []
+        }
+      ]
+    }
+  ]
+}
