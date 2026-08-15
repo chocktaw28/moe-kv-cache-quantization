@@ -61,17 +61,98 @@ Create an isolated venv and install OSCAR's pinned stack into it cleanly. Do **n
 
 The most expensive finding here, and the one most likely to affect others.
 
-OSCAR's vendored FlashAttention-3 build supports **sm90 / sm100 / sm120**
-(Hopper / Blackwell). On **sm89** (Ada Lovelace — RTX 4090, RTX 4000 Ada, L40S),
-the fa3 *prefill* kernel crashes **silently** when combined with OSCAR's custom
-INT2 KV-cache path. No traceback, no CUDA error, no non-zero exit — the process
-simply dies.
+**Observed, and solid.** On **sm89** (Ada Lovelace — RTX 4090), running with
+`--prefill-attention-backend fa3` **combined with the INT2 KV-cache path**, the
+server process dies **silently**: no traceback, no CUDA error, no non-zero exit —
+the process simply stops. Switching prefill to `triton` resolves it, with
+everything else held constant. The silence is what makes this costly: it looks
+like an OOM, a hang, or a RunPod infrastructure event rather than an
+architecture mismatch.
 
-The silence is what makes this costly: it looks like an OOM, a hang, or a RunPod
-infrastructure event rather than an architecture mismatch.
+**What was NOT tested:** fa3 prefill with a **BF16** KV cache (no INT2). So this
+cannot be stated as a general fa3/sm89 problem — only as "fa3 prefill + INT2 KV
+cache on sm89 dies silently." Whether fa3 alone is fine on sm89 remains open.
 
-**Fix:** use the Triton prefill backend, matching the decode backend that OSCAR
-already defaults to.
+**Corrected — the codebase gives three different answers about sm89 support,
+and this doc previously repeated only one of them, unverified.** An earlier
+version of this note asserted flatly that OSCAR's vendored FlashAttention-3
+build "supports sm90 / sm100 / sm120 (Hopper / Blackwell)" and that sm89 is not
+among them. That claim was inherited from an early diagnosis and was never
+checked against source. It does not hold up. See "Recorded miss" below.
+
+What source actually says, in
+`sglang-research/python/sglang/jit_kernel/flash_attention_v3.py` (and its test
+file), is three mutually inconsistent statements:
+
+1. **A code comment says sm89 is explicitly supported**, by name, alongside the
+   RTX 4090 (line 79, `_is_fa3_supported`, and duplicated at
+   `jit_kernel/tests/test_flash_attention_3.py:31`):
+   > `# And for sgl-kernel right now, we can build fa3 on sm80/sm86/sm89/sm90a.`
+   > `# That means if you use A100/A*0/L20/L40/L40s/4090 you can use fa3.`
+   (4090 = sm89, named directly.)
+
+2. **The runtime error string says sm89 is excluded**, requiring sm90+
+   (`flash_attention_v3.py:125` and `:196`, identical text, two call sites):
+   > `"flash_attn at sgl-kernel is only supported on sm90 and above"`
+
+3. **The test-skip reason gives a third, different boundary**
+   (`jit_kernel/tests/test_flash_attention_3.py:471` and `:1043`, identical
+   text, two call sites):
+   > `"flash_attn at sgl-kernel is only supported on sm90 or sm80"`
+
+None of these three agree with each other, let alone with the comment above them
+in the same function.
+
+**What the code actually checks — and it agrees with the comment, not the error
+strings.** `_is_fa3_supported()`'s real condition is:
+
+```python
+return (torch.version.cuda >= "12.3") and (
+    torch.cuda.get_device_capability(device)[0] == 9
+    or torch.cuda.get_device_capability(device)[0] == 8
+)
+```
+
+`get_device_capability()[0]` is the **major** compute-capability number only.
+sm89 (RTX 4090) has major version 8, so `== 8` evaluates **True** — the guard
+*passes* sm89 at runtime. This matches the comment ("we can build fa3 on
+...sm89...") and contradicts both error-string variants, which claim sm89 is
+rejected. Those error strings are effectively dead text on sm89: the condition
+that would raise them does not fire there.
+
+**The interesting fact this leaves us with:** the sm90-and-above guard exists in
+this code, but it did not fire on the run that crashed. Had it fired on the
+prefill path, this would have been a clear, loud `NotImplementedError` instead
+of a silent process death. The guard's own logic says sm89 is fine; the failure
+observed says otherwise for the fa3-prefill+INT2 combination specifically. The
+guard and the observed crash are simply not talking about the same boundary.
+
+**Possible mechanism (speculative) — not verified, offered only as a starting
+point.** No profiling was done, no shared-memory usage was captured, and fa3
+with a BF16 KV cache was not tested. This is a hypothesis, not a diagnosis.
+
+The same comment block quoted above continues with two more lines
+(`flash_attention_v3.py:74-78`) that are the only lead toward a mechanism:
+
+> ```
+> #  FA3 can fail without a enough shared memory for a some shapes, such as higher
+> #  hidden_dim or some special cases.
+> #  Right now, fa3 is supported for sm80/sm87 and sm86/sm89. The main different
+> #  Between sm80/sm87 and sm86/sm89 is the shared memory size.
+> ```
+
+The authors' own comment documents that fa3 can fail on insufficient shared
+memory for certain shapes, and identifies shared memory size as *the* main
+difference between sm80/sm87 and sm86/sm89 — this hardware is sm89. Separately,
+OSCAR's INT2 KV-cache path changes the memory layout the kernel operates on
+relative to a standard BF16 cache. Put together, a shared-memory limit tripped
+by the INT2 path's layout is one candidate explanation for a failure that
+produces no error output — but it has not been measured, and is not presented
+as established. See `UPSTREAM_ISSUE.md` for the full writeup.
+
+**Fix (unchanged; validated by observation regardless of the cause above):** use
+the Triton prefill backend, matching the decode backend that OSCAR already
+defaults to.
 
 ```diff
  SERVER_ARGS=(
@@ -87,12 +168,28 @@ See `eval_oscar_gpqa.patch` in this directory for the applied change.
 
 Note also that `rotation/eval_oscar_gpqa.sh` documents a `PRE_ROPE_FA3` environment
 variable in its header comment which is **never read anywhere in the codebase** —
-the backends are hardcoded in `SERVER_ARGS`. Setting it has no effect.
+confirmed with a repo-wide `grep -rn PRE_ROPE_FA3`, which returns only that one
+comment line. The backends are hardcoded in `SERVER_ARGS`. Setting it has no effect.
 
 **Cost of Triton prefill:** first server start takes ~320 s for kernel compilation
 for a given config. Subsequent starts with an identical config are fast (cached).
 Budget for this on every config change, and note that Triton cache is per-rank —
 OSCAR already prepends a per-rank cache redirector so TP workers don't race.
+
+**Recorded miss.** The original version of this section read:
+
+> *"OSCAR's vendored FlashAttention-3 build supports sm90 / sm100 / sm120
+> (Hopper / Blackwell). On sm89 (Ada Lovelace — RTX 4090, RTX 4000 Ada, L40S),
+> the fa3 prefill kernel crashes silently when combined with OSCAR's custom
+> INT2 KV-cache path."*
+
+The observed-crash sentence was and is accurate. The architecture claim in the
+first sentence was an inherited explanation, never verified against source, and
+does not survive the check above — source says sm89 is nominally supported (by
+comment and by the actual runtime condition), not excluded. Recorded here rather
+than silently corrected, same treatment as the clipping-threshold miss in
+`README.md` and the chunk-0 miss in section 6 of this file. See
+`UPSTREAM_ISSUE.md` in this directory for the write-up filed against OSCAR.
 
 ## 4. conda assumption in the eval script
 
