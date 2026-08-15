@@ -1,12 +1,3 @@
-# Upstream issue — ready to file against FutureMLS-Lab/OSCAR
-
-Supersedes the earlier draft at `~/UPSTREAM_ISSUE_DRAFT.md`, which asserted a
-flat "fa3 supports sm90/sm100/sm120 only" claim. That claim did not survive a
-check against source and is retracted below — see the "three-way
-inconsistency" section. This version states only what has been verified.
-
----
-
 **Title:** fa3 prefill crashes silently on sm89 with INT2 KV cache — and sm89
 support status is internally inconsistent
 
@@ -109,7 +100,7 @@ and 3: the `NotImplementedError` and the skip reason both describe a
 those two error strings are unreachable — the condition that would raise them
 never fires.
 
-## The guard exists but didn't fire — which I think is the more interesting fact
+## Note: the capability guard passes on sm89
 
 Given the above, `_is_fa3_supported()` returns `True` on sm89, so it did not
 reject my run. If it *had* fired on the prefill path in my configuration, I
@@ -150,9 +141,7 @@ kernel operates on relative to a standard BF16 cache.
 
 Put together, a shared-memory limit specific to sm89's smaller budget, tripped
 by the INT2 path's layout for some shape in this configuration, is one
-candidate explanation for a failure that produces no error output — a shared
-memory overrun can fail silently at the CUDA level depending on how it's
-triggered. I want to be explicit that this is speculation built from a code
+candidate explanation for a failure that produces no error output. I want to be explicit that this is speculation built from a code
 comment, not something I measured. If it's useful, I'd guess `compute-sanitizer
 --tool memcheck` or `cuda-gdb` on a repro would settle it quickly for someone
 with the hardware and time; I don't currently have either.
