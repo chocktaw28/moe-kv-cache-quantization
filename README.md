@@ -99,4 +99,9 @@ reproduction work here is a portability exercise; all method credit is theirs.
 
 ## Contact
 
-Jayin Panesar — independent research. Issues and corrections welcome.
+Jayin Panesar - independent research.
+
+Email: panesarjayin@gmail.com
+
+Issues and corrections welcome - please open a GitHub issue for anything
+factual about the corpus or the reproduction.
