@@ -1,0 +1,46 @@
+diff --git a/rotation/eval_oscar_gpqa.sh b/rotation/eval_oscar_gpqa.sh
+index b2f314702..d4f072e4b 100755
+--- a/rotation/eval_oscar_gpqa.sh
++++ b/rotation/eval_oscar_gpqa.sh
+@@ -18,7 +18,10 @@
+ #   MAX_NEW_TOKENS (default 32768)
+ #   NUM_WORKERS    simple-evals client workers (default 32)
+ #   N_REPEATS      (default 1)
+-#   PRE_ROPE_FA3   set to 1 to force prefill fa3 + decode triton (default 1)
++#   (was: PRE_ROPE_FA3 doc'd here but never read anywhere in the codebase.
++#   prefill+decode both hardcoded to triton below — fa3 prefill crashes
++#   silently on sm89 4090s when combined with the int2 KV-cache path; see
++#   run_logs/investigation/ for the isolated repro.)
+ 
+ set -euo pipefail
+ export HF_HOME="${HF_HOME:-/shared/huggingface}"
+@@ -46,8 +49,18 @@ NAME="${NAME:-gpqa_oscar}"
+ 
+ CONDA_BASE="${CONDA_BASE:-${HOME}/miniconda3}"
+ CONDA_ENV_NAME="${CONDA_ENV_NAME:-oscar}"
+-source "${CONDA_BASE}/etc/profile.d/conda.sh"
+-conda activate "${CONDA_ENV_NAME}"
++if [[ -f "${CONDA_BASE}/etc/profile.d/conda.sh" ]]; then
++    source "${CONDA_BASE}/etc/profile.d/conda.sh"
++    conda activate "${CONDA_ENV_NAME}"
++elif [[ -n "${VIRTUAL_ENV:-}" ]]; then
++    # No conda on this pod (e.g. env is a plain venv like oscar-venv) — trust
++    # whatever Python env the caller already activated instead of failing.
++    echo "[eval-oscar] no conda at ${CONDA_BASE}; using active venv ${VIRTUAL_ENV}"
++    CONDA_PREFIX="${VIRTUAL_ENV}"
++else
++    echo "[eval-oscar] no conda at ${CONDA_BASE} and no venv active; aborting" >&2
++    exit 1
++fi
+ 
+ export PATH="${CONDA_PREFIX}/bin:${PATH}"
+ # Prepend per-rank Triton cache redirector so TP workers don't race on shared
+@@ -83,7 +96,7 @@ trap cleanup EXIT INT TERM
+ SERVER_ARGS=(
+     --model-path "${MODEL}"
+     --tensor-parallel-size "${TP_SIZE}"
+-    --prefill-attention-backend fa3
++    --prefill-attention-backend triton
+     --decode-attention-backend triton
+     --kv-cache-dtype int2
+     --kv-cache-quant-group-size "${GROUP_SIZE}"
