@@ -5,3 +5,4 @@ research-plan.md
 recovery/
 __pycache__/
 *.pyc
+.DS_Store
