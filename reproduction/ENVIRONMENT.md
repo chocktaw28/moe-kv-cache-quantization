@@ -117,10 +117,25 @@ deployment. On a single 24 GB card this OOMs.
 scale only**. This has **not** been validated at the full 32K-context production
 scale, and should not be assumed to hold there.
 
-> **TODO:** the working overrides were passed as environment variables at
-> invocation rather than committed to a file, and were lost with the pod. Record
-> them in a committed `run_config.env` next time rather than as shell-history-only
-> command-line overrides.
+> **~~TODO~~ RESOLVED.** The original note read: *"the working overrides were passed
+> as environment variables at invocation rather than committed to a file, and were
+> lost with the pod. Record them in a committed `run_config.env` next time rather
+> than as shell-history-only command-line overrides."*
+>
+> Done — the working values are now committed in
+> [`run_config.env`](run_config.env), which the launch scripts in `scripts/` source
+> directly.
+>
+> No patch is or was required for this. `MEM_FRAC` is a plain environment variable
+> with a shell default at `rotation/eval_oscar_gpqa.sh:38`:
+>
+> ```sh
+> MEM_FRAC="${MEM_FRAC:-0.8}"
+> ```
+>
+> so exporting `MEM_FRAC=0.72` before invocation is sufficient to override it. The
+> value was only ever "lost" in the sense of being unrecorded, not in the sense of
+> needing to be re-derived through a code change.
 
 **Lesson worth generalising:** any tuning value discovered by trial and error
 belongs in a committed file, not a command line.
@@ -135,21 +150,139 @@ set, `METHOD=qqt_sst`, composition `r_h_pbr`, `chunk=all`, `head_dim=128`:
 | Server ready | 320 s (first-time Triton kernel compilation) |
 | Prompts sent | 198 GPQA-Diamond, ok=198, err=0 |
 | Dump elapsed | 129.8 s |
-| Prompts captured | **117** (post-dedup/scheduling) |
+| Prompts captured | **117** (dump token budget — see below; *not* dedup) |
 | Layers captured | 36/36 |
 | Peak VRAM | 20152 MiB of 24564 MiB |
 | Rotation outputs | `k_rotation_qqt_r_h_pbr.pt`, `v_rotation_sst_r_h_pbr.pt` — 2,399,261 bytes each |
 
 **Note the 198 → 117 reduction.** All 198 requests succeeded, but only 117 prompts
-appear in the captured calibration set after dedup/scheduling. These are two
-different numbers and should not be conflated when reporting. The output directory
-name encodes the surviving count (`seq30000_prompt117_group128`), which is a useful
-built-in provenance check.
+appear in the captured calibration set. These are two different numbers and should not
+be conflated when reporting. The output directory name encodes the surviving count
+(`seq30000_prompt117_group128`), which is a useful built-in provenance check.
 
-Whether 117 is the expected post-dedup count or represents a silent drop has not
-been confirmed against upstream. OSCAR's paper describes calibration as lightweight
-and low-sensitivity to calibration domain, so 117 prompts is plausibly sufficient —
-but this is an assumption, not a verified claim.
+**Update — the full chain is now established from source.** Read against OSCAR commit
+`41ebcdba`. The original note (*"whether 117 is the expected post-dedup count or
+represents a silent drop has not been confirmed against upstream"*) is resolved: 117 is
+expected behaviour, nothing was silently dropped, and the mechanism is a token budget,
+not dedup.
+
+**1. A token budget is set.** `save_qkv_8b.sh:21`:
+
+```sh
+export DUMP_KVCACHE_TOKENS="${DUMP_KVCACHE_TOKENS:-30000}"
+```
+
+Documented in the OSCAR repo's own `README.md:368`, in the calibration-knobs table:
+`DUMP_KVCACHE_TOKENS` — default 30000 — "Total token budget for calibration".
+
+**2. The dump hook accumulates per layer and truncates the final chunk.**
+`sglang-dump-qkv/python/sglang/srt/layers/attention/triton_backend.py:850-857`:
+
+```python
+dump_tokens   = get_int_env_var("DUMP_KVCACHE_TOKENS", 100)
+saved_so_far  = self._dump_saved_tokens.get(layer_id, 0)
+remaining     = dump_tokens - saved_so_far
+if remaining > 0:
+    num_tokens = q.shape[0]
+    tokens_to_save = min(num_tokens, remaining)      # truncates the final batch
+```
+
+**3. Once the budget is filled, the layer is marked done.** Lines 918-923:
+
+```python
+self._dump_saved_tokens[layer_id] = saved_so_far + tokens_to_save
+self._dump_chunk_idx[layer_id] = chunk_idx + 1
+if saved_so_far + tokens_to_save >= dump_tokens:
+    self._dump_kv_done_layers.add(layer_id)      # stop dumping this layer
+```
+
+**4. The per-sequence lengths recorded in that final chunk are themselves clipped to
+what fit**, so the last prompt counted is likely partial, not complete. Lines 873-882:
+
+```python
+chunk_seq_lens = []
+if forward_batch.extend_seq_lens is not None:
+    remain = tokens_to_save
+    for slen in forward_batch.extend_seq_lens.tolist():
+        if remain <= 0:
+            break
+        take = min(slen, remain)          # <-- clipped to remaining budget
+        chunk_seq_lens.append(take)
+        remain -= take
+```
+
+**5. The prompt count is computed after the fact**, by summing those recorded lengths —
+it is an output of the dump, not an input to it. `save_qkv_8b.sh:149-160`:
+
+```sh
+N_PROMPTS=$("${PY}" - "${DUMP_KVCACHE_DIR}/layer_0/seq_lens" <<'PYEOF'
+import os, sys, torch
+seq_dir = sys.argv[1]
+total = 0
+for f in sorted(os.listdir(seq_dir), key=lambda x: int(x.split('.')[0])):
+    s = torch.load(os.path.join(seq_dir, f), weights_only=True, map_location='cpu')
+    total += len(s.tolist())
+print(total)
+PYEOF
+)
+```
+
+**6. That count is written into the output directory name.** `save_qkv_8b.sh:162`:
+
+```sh
+FINAL_TAG="seq${DUMP_KVCACHE_TOKENS}_prompt${N_PROMPTS}_group${GROUP_SIZE}"
+```
+— which is exactly `seq30000_prompt117_group128`, the directory this run produced.
+
+**In plain terms:** all 198 requests genuinely succeeded — nothing failed, nothing was
+dropped by the server or the client. The dump hook simply stopped *recording* once it
+had banked the 30,000 tokens it was told to collect. "117" means "prompts that
+contributed at least one recorded token," not "complete prompts captured" — per point 4,
+the last one is likely truncated mid-sequence.
+
+**Independent corroboration from a second run.** RotationZoo's own Qwen3-8B checkpoint
+(compared against directly in Stage A/B) carries the directory name
+`seq20000_prompt83_group128` — a different budget (20,000 vs my 30,000), same model,
+same GPQA-Diamond-style calibration set:
+
+```
+mine:        30000 / 117 = 256.4 tokens/prompt
+RotationZoo: 20000 /  83 = 241.0 tokens/prompt
+```
+
+Two independent runs, two different token budgets, land within ~6% of each other at
+~250 tokens/prompt. The budget mechanism doesn't just explain my run in isolation — it
+quantitatively predicts the RotationZoo count too, from an unrelated calibration run.
+This is real corroboration, not just an unfalsifiable story fitted to one data point.
+
+**A hypothesis that turned out to be wrong, recorded as a miss.** The 198 → 117 gap was
+initially attributed to `load_tensor()` in `rotation/compute_kv_rotation.py:49-72`,
+whose `"all"` mode does deliberately discard chunk 0:
+
+> ```
+> "all" mode skips chunk 0 (a 6-token warmup batch produced by the prefill
+> schedule that would dominate hessian estimation with degenerate samples).
+> ```
+>
+> ```python
+> chunk_paths = [p for p in chunk_paths if int(p.stem) != 0]
+> ```
+
+That skip is real, and this calibration ran `chunk=all`, so it did apply. But it does
+**not** explain the prompt count: the skip happens in the *calibration* step, while 117
+is counted in the *dump* step, before `compute_kv_rotation.py` ever runs. The two are
+sequential, not the same reduction. The discarded chunk 0 is 6 tokens of warmup, which
+is also far too small to account for a 198 → 117 gap.
+
+**What remains unverified, even now.** The budget explains the mechanism, predicts the
+right order of magnitude, and is corroborated by a second independent run landing at a
+consistent tokens/prompt figure. It does **not** amount to having independently confirmed
+that 117 is the *exact* count 30,000 tokens should yield for this specific set of
+GPQA-Diamond prompts and this scheduler's batching — that would require summing the
+dumped `seq_lens` tensors directly for this run, which has not been done. As before:
+OSCAR's paper describes calibration as lightweight and low-sensitivity to calibration
+domain, so 117 prompts is plausibly sufficient — that part remains an assumption, not a
+verified claim.
 
 Artifact hashes for the run above are in `rotations_sha256.txt`.
 
